@@ -18,9 +18,7 @@ public class LabelPanel : MonoBehaviour
     [Header("打字机效果")]
     [Tooltip("单个字符的最大显示间隔")]
     public float MaxNextTime = 0.05f;//显示下一个字的冷却时间
-
-    // 这代码太弱智了，后面必须重构。
-    [Header("Label替换")]
+    
 
     [Header("任务判定点配置")]
     [Tooltip("目前最多是5个")]
@@ -31,8 +29,11 @@ public class LabelPanel : MonoBehaviour
     public List<GameObject> cardJudge03 = new List<GameObject>();
     public List<GameObject> cardJudge04 = new List<GameObject>();
     public List<GameObject> cardJudge05 = new List<GameObject>();
-    
     public List<List<GameObject>> cardJudges = new List<List<GameObject>>();
+    
+    [Header("游戏阶段判定")]
+    public GameStageManager gameStageManager;
+    public GameObject currentLabelIcon; // 匹配的LabelIcon
     
 
     public void Start()
@@ -86,11 +87,19 @@ public class LabelPanel : MonoBehaviour
                     {
                         // 这个地方算是判定完成了整个标签的内容
                         // 下一步包括active新的LabelIcon，这个函数的实现最好交给gamemanager。
-                        Debug.Log("本标签全部任务完成");
-                        Debug.Log("进行下一步");
-                        // 将自己赋值到GM中。
+                        Debug.Log("本标签全部任务完成->进行下一步");
+                        
+                        // 将此标签已完成的信息传递到StageMannager，并执行检测函数（实际上跟下面的版本差不多）
+                        //gameManager.GetComponent<GameManager>().currentLabelPanel = gameObject;
+                        gameStageManager.StageUpdate(currentLabelIcon);
+                        gameStageManager.StageCheck();
+                        
+                        // 将自己赋值到GM中。 完成后将这段废弃。
+                        /*
                         gameManager.GetComponent<GameManager>().currentLabelPanel = gameObject;
                         gameManager.GetComponent<GameManager>().SwitchIconAndPanel(gameObject);
+                        */
+
 
                     }
                 }

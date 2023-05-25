@@ -3223,6 +3223,8 @@ MonoBehaviour:
   cardJudge03: []
   cardJudge04: []
   cardJudge05: []
+  gameStageManager: {fileID: 417565885}
+  currentLabelIcon: {fileID: 1047604100}
 --- !u!95 &290033650
 Animator:
   serializedVersion: 5
@@ -3270,7 +3272,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &295094068
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3288,7 +3290,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 959.99994, y: 0}
+  m_AnchoredPosition: {x: 693, y: 0}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &295094069
@@ -3658,6 +3660,8 @@ MonoBehaviour:
   cardJudge03: []
   cardJudge04: []
   cardJudge05: []
+  gameStageManager: {fileID: 417565885}
+  currentLabelIcon: {fileID: 1256955274}
 --- !u!95 &301716428
 Animator:
   serializedVersion: 5
@@ -4415,6 +4419,7 @@ GameObject:
   - component: {fileID: 417565882}
   - component: {fileID: 417565883}
   - component: {fileID: 417565884}
+  - component: {fileID: 417565885}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -4583,6 +4588,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: dd73c32873762b8409fa0fb614173e4f, type: 3}
+--- !u!114 &417565885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417565877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a9fccee0a1e31f4ea958d3eac62adb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stageNumCurrent: 1
+  stage01:
+  - {fileID: 1457344945}
+  - {fileID: 295094067}
+  stage02:
+  - {fileID: 834820963}
+  - {fileID: 747178751}
+  - {fileID: 983091179}
+  - {fileID: 1297409261}
+  - {fileID: 167967375}
+  - {fileID: 1256955274}
+  - {fileID: 946215989}
+  - {fileID: 2086415854}
+  - {fileID: 1767926606}
+  - {fileID: 1138720146}
+  - {fileID: 1500056694}
+  - {fileID: 1706955502}
+  - {fileID: 1047604100}
+  stage03:
+  - {fileID: 217713028}
 --- !u!1 &418040962
 GameObject:
   m_ObjectHideFlags: 0
@@ -4936,6 +4973,8 @@ MonoBehaviour:
   cardJudge03: []
   cardJudge04: []
   cardJudge05: []
+  gameStageManager: {fileID: 417565885}
+  currentLabelIcon: {fileID: 167967375}
 --- !u!95 &453746100
 Animator:
   serializedVersion: 5
@@ -6525,6 +6564,8 @@ MonoBehaviour:
   cardJudge03: []
   cardJudge04: []
   cardJudge05: []
+  gameStageManager: {fileID: 417565885}
+  currentLabelIcon: {fileID: 1706955502}
 --- !u!95 &634586031
 Animator:
   serializedVersion: 5
@@ -7192,6 +7233,8 @@ MonoBehaviour:
   cardJudge03: []
   cardJudge04: []
   cardJudge05: []
+  gameStageManager: {fileID: 417565885}
+  currentLabelIcon: {fileID: 2086415854}
 --- !u!95 &686352695
 Animator:
   serializedVersion: 5
@@ -9553,7 +9596,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &956019034
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9606,6 +9649,8 @@ MonoBehaviour:
   cardJudge03: []
   cardJudge04: []
   cardJudge05: []
+  gameStageManager: {fileID: 417565885}
+  currentLabelIcon: {fileID: 295094067}
 --- !u!95 &956019036
 Animator:
   serializedVersion: 5
@@ -10314,6 +10359,8 @@ MonoBehaviour:
   cardJudge03: []
   cardJudge04: []
   cardJudge05: []
+  gameStageManager: {fileID: 417565885}
+  currentLabelIcon: {fileID: 1297409261}
 --- !u!95 &1106477991
 Animator:
   serializedVersion: 5
@@ -11588,6 +11635,8 @@ MonoBehaviour:
   cardJudge03: []
   cardJudge04: []
   cardJudge05: []
+  gameStageManager: {fileID: 417565885}
+  currentLabelIcon: {fileID: 1500056694}
 --- !u!95 &1325245005
 Animator:
   serializedVersion: 5
@@ -12967,7 +13016,10 @@ MonoBehaviour:
   cardJudge02: []
   cardJudge03: []
   cardJudge04: []
-  cardJudge05: []
+  cardJudge05:
+  - {fileID: 1621638183}
+  gameStageManager: {fileID: 417565885}
+  currentLabelIcon: {fileID: 747178751}
 --- !u!95 &1531568163
 Animator:
   serializedVersion: 5
@@ -13068,6 +13120,8 @@ MonoBehaviour:
   - {fileID: 83696910}
   cardJudge04: []
   cardJudge05: []
+  gameStageManager: {fileID: 417565885}
+  currentLabelIcon: {fileID: 983091179}
 --- !u!95 &1541011315
 Animator:
   serializedVersion: 5
@@ -13166,6 +13220,8 @@ MonoBehaviour:
   cardJudge03: []
   cardJudge04: []
   cardJudge05: []
+  gameStageManager: {fileID: 417565885}
+  currentLabelIcon: {fileID: 0}
 --- !u!95 &1545093855
 Animator:
   serializedVersion: 5
@@ -14639,6 +14695,8 @@ MonoBehaviour:
   cardJudge03: []
   cardJudge04: []
   cardJudge05: []
+  gameStageManager: {fileID: 417565885}
+  currentLabelIcon: {fileID: 217713028}
 --- !u!95 &1665212579
 Animator:
   serializedVersion: 5
@@ -15938,6 +15996,8 @@ MonoBehaviour:
   cardJudge03: []
   cardJudge04: []
   cardJudge05: []
+  gameStageManager: {fileID: 417565885}
+  currentLabelIcon: {fileID: 946215989}
 --- !u!95 &1774910112
 Animator:
   serializedVersion: 5
@@ -16579,6 +16639,8 @@ MonoBehaviour:
   cardJudge03: []
   cardJudge04: []
   cardJudge05: []
+  gameStageManager: {fileID: 417565885}
+  currentLabelIcon: {fileID: 1138720146}
 --- !u!95 &1806528659
 Animator:
   serializedVersion: 5
@@ -17533,6 +17595,8 @@ MonoBehaviour:
   cardJudge03: []
   cardJudge04: []
   cardJudge05: []
+  gameStageManager: {fileID: 417565885}
+  currentLabelIcon: {fileID: 1767926606}
 --- !u!95 &1995787630
 Animator:
   serializedVersion: 5
@@ -20028,6 +20092,8 @@ MonoBehaviour:
   cardJudge03: []
   cardJudge04: []
   cardJudge05: []
+  gameStageManager: {fileID: 417565885}
+  currentLabelIcon: {fileID: 1457344945}
 --- !u!224 &5432327035156108776
 RectTransform:
   m_ObjectHideFlags: 0

@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("_currentLabelPanel = " + _currentLabelPanel.name);
         // 获取其在列表中的位置
-        int listIndex = GetNextPanelIcon(_currentLabelPanel);
+        int listIndex = GetThisPanelIcon(_currentLabelPanel);
         GameObject nextLabelPanel = labelPanelList[listIndex + 1];
         GameObject nextLabelIcon = labelIconList[listIndex + 1];
         GameObject _currentLabelIcon = labelIconList[listIndex];
@@ -60,9 +60,10 @@ public class GameManager : MonoBehaviour
         ActivateOneDeactivateAnother(nextLabelPanel, _currentLabelPanel);
     }
     
+    // ---------------------------这个地方建议重构-----------------------------------
     
     // 查找_currentLabelPanel在list labelPanelList中的序列号，返回序列号，命名为num
-    public int GetNextPanelIcon(GameObject _currentLabelPanel)
+    public int GetThisPanelIcon(GameObject _currentLabelPanel)
     {
         // 在labelPanelList中查找_currentLabelPanel的序列号
         int num = labelPanelList.IndexOf(_currentLabelPanel);
