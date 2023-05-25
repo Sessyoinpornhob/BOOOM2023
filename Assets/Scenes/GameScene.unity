@@ -297,9 +297,9 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 36
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 30
     m_MaxSize: 45
     m_Alignment: 0
@@ -364,8 +364,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31678698}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.8600001, y: 3.67, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: -0.5, y: 2.61, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -504,9 +504,9 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 36
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 30
     m_MaxSize: 45
     m_Alignment: 0
@@ -515,7 +515,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5728\u6211\u6CAE\u4E27\u7684\u65F6\u5019\uFF0C\u6211\u7684\u6BCD\u4EB2\u4F1A\u5B89\u6170\u6211\uFF0C\u5979\u4F1A\u8BF4\u6211\u4ECE\u5C0F\u5C31\u662F\u4E00\u4E2A\u5F88\u7279\u522B\u7684\u5B69\u5B50\u3002\u6211\u89C9\u5F97\u8BB8\u591A\u7236\u6BCD\u90FD\u548C\u4ED6\u4EEC\u7684\u5B69\u5B50\u8FD9\u6837\u8BF4\u3002\u6709\u65F6\uFF0C\u4E3A\u4E86\u8BF4\u670D\u6211\uFF0C\u4ED6\u4EEC\u4F1A\u5BF9\u6211\u7684\u7AE5\u5E74\u6545\u4E8B\u5938\u5927\u5176\u8BCD\u3002\\n\u6709\u4E00\u5929\uFF0C\u5979\u544A\u8BC9\u6211\u4E00\u4EF6\u6211\u4ECE\u6765\u90FD\u6CA1\u542C\u8FC7\u7684\u4E8B\u60C5\uFF1A\u5728\u6211\u4E03\u5C81\u751F\u65E5\u90A3\u5929\uFF0C\u6211\u6D88\u5931\u4E86\u3002\u7236\u6BCD\u75AF\u4E86\u4E00\u6837\u5730\u627E\u6211\uFF0C\u8B66\u5BDF\u3001\u5BFB\u4EBA\u542F\u4E8B\u3001\u4EC0\u4E48\u90FD\u7528\u4E0A\u4E86\uFF0C\u4F46\u6CA1\u4EBA\u89C1\u8FC7\u6211\u3002\u7136\u800C\uFF0C\u5C31\u5728\u4E03\u5929\u540E\uFF0C\u6211\u81EA\u5DF1\u5FFD\u7136\u51FA\u73B0\u5728\u5BB6\u95E8\u53E3\uFF0C\u5168\u8EAB\u5B8C\u597D\uFF0C\u8FD8\u5728\u7B11\u563B\u563B\u5730\u8214\u68D2\u68D2\u7CD6\u3002"
+  m_Text: "\u5728\u6211\u6CAE\u4E27\u7684\u65F6\u5019\uFF0C\u6211\u7684\u6BCD\u4EB2\u4F1A\u5B89\u6170\u6211\uFF0C\u5979\u4F1A\u8BF4\u6211\u4ECE\u5C0F\u5C31\u662F\u4E00\u4E2A\u5F88\u7279\u522B\u7684\u5B69\u5B50\u3002\u6211\u89C9\u5F97\u8BB8\u591A\u7236\u6BCD\u90FD\u548C\u4ED6\u4EEC\u7684\u5B69\u5B50\u8FD9\u6837\u8BF4\u3002\u6709\u65F6\uFF0C\u4E3A\u4E86\u8BF4\u670D\u6211\uFF0C\u4ED6\u4EEC\u4F1A\u5BF9\u6211\u7684\u7AE5\u5E74\u6545\u4E8B\u5938\u5927\u5176\u8BCD\u3002\n\n\u6709\u4E00\u5929\uFF0C\u5979\u544A\u8BC9\u6211\u4E00\u4EF6\u6211\u4ECE\u6765\u90FD\u6CA1\u542C\u8FC7\u7684\u4E8B\u60C5\uFF1A\u5728\u6211\u4E03\u5C81\u751F\u65E5\u90A3\u5929\uFF0C\u6211\u6D88\u5931\u4E86\u3002\u7236\u6BCD\u75AF\u4E86\u4E00\u6837\u5730\u627E\u6211\uFF0C\u8B66\u5BDF\u3001\u5BFB\u4EBA\u542F\u4E8B\u3001\u4EC0\u4E48\u90FD\u7528\u4E0A\u4E86\uFF0C\u4F46\u6CA1\u4EBA\u89C1\u8FC7\u6211\u3002\u7136\u800C\uFF0C\u5C31\u5728\u4E03\u5929\u540E\uFF0C\u6211\u81EA\u5DF1\u5FFD\u7136\u51FA\u73B0\u5728\u5BB6\u95E8\u53E3\uFF0C\u5168\u8EAB\u5B8C\u597D\uFF0C\u8FD8\u5728\u7B11\u563B\u563B\u5730\u8214\u68D2\u68D2\u7CD6\u3002"
 --- !u!222 &42245457
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -571,8 +571,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52929505}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.7999997, y: -0.8000002, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: -0.64, y: -2.77, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -992,8 +992,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79448109}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.87, y: -3.23, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 6.48, y: -2.43, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -1119,8 +1119,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 83696910}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.120000005, y: 1.4099998, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 1.83, y: 0.85, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -2007,8 +2007,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 180729283}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.31, y: 1.4200001, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 7.74, y: -2.47, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -2980,18 +2980,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 36
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 30
-    m_MaxSize: 45
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5893\u7891\u524D\u6446\u7740\u8721\u70DB\u3002\\n\uFF08\u6839\u636E\u6587\u5B57\u548C\u63D2\u753B\uFF0C\u627E\u5230\u5408\u9002\u7684\u724C\uFF09"
+  m_Text: "\u5893\u7891\u524D\u6446\u7740\u8721\u70DB\u3002\n\n\uFF08\u6839\u636E\u6587\u5B57\u548C\u63D2\u753B\uFF0C\u627E\u5230\u5408\u9002\u7684\u724C\uFF09"
 --- !u!222 &287573380
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3215,6 +3215,7 @@ MonoBehaviour:
   labelPanelID: 
   textManager: {fileID: 417565883}
   textTarget: {fileID: 10957163}
+  MaxNextTime: 0.05
   cardJudgeCount: 1
   cardJudge01:
   - {fileID: 1659292767}
@@ -3487,8 +3488,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301483712}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.46, y: 1.4099998, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: -0.58, y: 0.82, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -3648,6 +3649,7 @@ MonoBehaviour:
   labelPanelID: 
   textManager: {fileID: 417565883}
   textTarget: {fileID: 1994825261}
+  MaxNextTime: 0.05
   cardJudgeCount: 2
   cardJudge01:
   - {fileID: 456036125}
@@ -3758,8 +3760,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349524081}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.13, y: 3.67, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 1.89, y: 2.61, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -3944,9 +3946,9 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 36
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 30
     m_MaxSize: 45
     m_Alignment: 0
@@ -4011,8 +4013,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 388540099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.96, y: 3.67, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 6.5, y: 2.68, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -4203,7 +4205,7 @@ GameObject:
   - component: {fileID: 409965943}
   - component: {fileID: 409965942}
   m_Layer: 5
-  m_Name: LevelChanger
+  m_Name: LevelCheater
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4298,8 +4300,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411645537}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.52, y: 1.4099998, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 7.67, y: 0.97, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -4684,8 +4686,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 444641952}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.36, y: -0.8000002, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: -0.65, y: -1.04, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -4925,6 +4927,7 @@ MonoBehaviour:
   labelPanelID: 
   textManager: {fileID: 417565883}
   textTarget: {fileID: 2053973598}
+  MaxNextTime: 0.05
   cardJudgeCount: 2
   cardJudge01:
   - {fileID: 4521630277021912939}
@@ -5081,8 +5084,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 456036125}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.87, y: 3.67, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 4.28, y: 2.69, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -5541,9 +5544,9 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 36
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 30
     m_MaxSize: 45
     m_Alignment: 0
@@ -5608,8 +5611,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 515809364}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.9699998, y: 1.4099998, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 4.27, y: 0.95, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -6513,6 +6516,7 @@ MonoBehaviour:
   labelPanelID: 
   textManager: {fileID: 417565883}
   textTarget: {fileID: 2030449783}
+  MaxNextTime: 0.05
   cardJudgeCount: 2
   cardJudge01:
   - {fileID: 444641952}
@@ -7179,6 +7183,7 @@ MonoBehaviour:
   labelPanelID: 
   textManager: {fileID: 417565883}
   textTarget: {fileID: 42245455}
+  MaxNextTime: 0.05
   cardJudgeCount: 1
   cardJudge01:
   - {fileID: 31678698}
@@ -7378,9 +7383,9 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 36
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 30
     m_MaxSize: 45
     m_Alignment: 0
@@ -7579,8 +7584,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 746458614}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.96, y: 1.4099998, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 6.5, y: 0.93, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -7852,7 +7857,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 30
@@ -8718,9 +8723,9 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 36
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 30
     m_MaxSize: 45
     m_Alignment: 0
@@ -8729,7 +8734,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8FD9\u4E00\u6B21\uFF0C\u9762\u5BF9\u6211\u53E6\u4E00\u534A\u7684\u6B7B\u4EA1\uFF0C\u6211\u5DF2\u7ECF\u975E\u5E38\u5E73\u9759\u4E86\u3002\u6211\u77E5\u9053\u6211\u7684\u8EAB\u4F53\u4E5F\u652F\u6491\u4E0D\u4E86\u592A\u4E45\uFF0C\u5F88\u5FEB\u6211\u4E5F\u4F1A\u8E0F\u4E0A\u76F8\u540C\u7684\u8DEF\u3002\\n\u6211\u7684\u4F34\u4FA3\uFF0C\u6211\u7684\u534A\u8EAB\uFF0C\u6211\u5728\u8FD9\u4E2A\u4E16\u754C\u4E0A\u6700\u7231\u7684\u4EBA\uFF0C\u65E0\u529B\u5730\u63E1\u7740\u6211\u7684\u624B\uFF0C\u547C\u5438\u5FAE\u5F31\u3002\u6211\u4EEC\u51DD\u89C6\u7740\u5F7C\u6B64\u3002"
+  m_Text: "\u8FD9\u4E00\u6B21\uFF0C\u9762\u5BF9\u6211\u53E6\u4E00\u534A\u7684\u6B7B\u4EA1\uFF0C\u6211\u5DF2\u7ECF\u975E\u5E38\u5E73\u9759\u4E86\u3002\u6211\u77E5\u9053\u6211\u7684\u8EAB\u4F53\u4E5F\u652F\u6491\u4E0D\u4E86\u592A\u4E45\uFF0C\u5F88\u5FEB\u6211\u4E5F\u4F1A\u8E0F\u4E0A\u76F8\u540C\u7684\u8DEF\u3002\n\n\u6211\u7684\u4F34\u4FA3\uFF0C\u6211\u7684\u534A\u8EAB\uFF0C\u6211\u5728\u8FD9\u4E2A\u4E16\u754C\u4E0A\u6700\u7231\u7684\u4EBA\uFF0C\u65E0\u529B\u5730\u63E1\u7740\u6211\u7684\u624B\uFF0C\u547C\u5438\u5FAE\u5F31\u3002\u6211\u4EEC\u51DD\u89C6\u7740\u5F7C\u6B64\u3002"
 --- !u!222 &824019182
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8785,8 +8790,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826979987}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.36, y: 1.4099998, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 3.05, y: 0.91, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -9137,8 +9142,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 934688931}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.4, y: 1.4099998, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 5.42, y: 1.08, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -9591,6 +9596,7 @@ MonoBehaviour:
   labelPanelID: 
   textManager: {fileID: 417565883}
   textTarget: {fileID: 287573378}
+  MaxNextTime: 0.05
   cardJudgeCount: 2
   cardJudge01:
   - {fileID: 1977905796}
@@ -10299,6 +10305,7 @@ MonoBehaviour:
   labelPanelID: 
   textManager: {fileID: 417565883}
   textTarget: {fileID: 377543551}
+  MaxNextTime: 0.05
   cardJudgeCount: 2
   cardJudge01:
   - {fileID: 4521630277161221729}
@@ -10509,9 +10516,9 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 36
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 30
     m_MaxSize: 45
     m_Alignment: 0
@@ -10520,7 +10527,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u4F60\u662F\u6211\u4EEC\u7684\u5929\u4F7F.....\u5728\u4F60\u51FA\u751F\u4E4B\u524D\u6211\u5C31\u60F3\u597D\u4E86\u4F60\u7684\u540D\u5B57\u3002\u5206\u5A29\u5E76\u4E0D\u987A\u5229\uFF0C\u6BCF\u4E2A\u4EBA\u90FD\u5403\u4E86\u5F88\u591A\u82E6\uFF0C\u5F88\u8270\u96BE\u3001\u5F88\u4E0D\u5BB9\u6613\uFF0C\u4F46\u6211\u4EEC\u8FD8\u662F\u628A\u4F60\u751F\u4E0B\u6765\u4E86\u3002\\n\u533B\u751F\u7ED9\u4E86\u6211\u4EEC\u4E00\u5219\u8BCA\u65AD\u4E66\u3002"
+  m_Text: "\u4F60\u662F\u6211\u4EEC\u7684\u5929\u4F7F.....\u5728\u4F60\u51FA\u751F\u4E4B\u524D\u6211\u5C31\u60F3\u597D\u4E86\u4F60\u7684\u540D\u5B57\u3002\u5206\u5A29\u5E76\u4E0D\u987A\u5229\uFF0C\u6BCF\u4E2A\u4EBA\u90FD\u5403\u4E86\u5F88\u591A\u82E6\uFF0C\u5F88\u8270\u96BE\u3001\u5F88\u4E0D\u5BB9\u6613\uFF0C\u4F46\u6211\u4EEC\u8FD8\u662F\u628A\u4F60\u751F\u4E0B\u6765\u4E86\u3002\n\n\u533B\u751F\u7ED9\u4E86\u6211\u4EEC\u4E00\u5219\u8BCA\u65AD\u4E66\u3002"
 --- !u!222 &1143679868
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11572,6 +11579,7 @@ MonoBehaviour:
   labelPanelID: 
   textManager: {fileID: 417565883}
   textTarget: {fileID: 482895396}
+  MaxNextTime: 0.05
   cardJudgeCount: 2
   cardJudge01:
   - {fileID: 1761003932}
@@ -11636,8 +11644,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1360381744}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.39, y: 3.67, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 3.15, y: 2.72, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -12243,8 +12251,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1455442978}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.48, y: 3.67, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 5.43, y: 2.69, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -12952,6 +12960,7 @@ MonoBehaviour:
   labelPanelID: 
   textManager: {fileID: 417565883}
   textTarget: {fileID: 824019180}
+  MaxNextTime: 0.05
   cardJudgeCount: 1
   cardJudge01:
   - {fileID: 2105878152}
@@ -13049,6 +13058,7 @@ MonoBehaviour:
   labelPanelID: 
   textManager: {fileID: 417565883}
   textTarget: {fileID: 1760915623}
+  MaxNextTime: 0.05
   cardJudgeCount: 3
   cardJudge01:
   - {fileID: 2023314043}
@@ -13148,6 +13158,7 @@ MonoBehaviour:
   labelPanelID: 
   textManager: {fileID: 417565883}
   textTarget: {fileID: 1664219398}
+  MaxNextTime: 0.05
   cardJudgeCount: 1
   cardJudge01:
   - {fileID: 1360381744}
@@ -13224,9 +13235,9 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 36
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 30
     m_MaxSize: 45
     m_Alignment: 0
@@ -14378,8 +14389,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1659292767}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6, y: 1.41, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 0.7, y: 2.56, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -14518,9 +14529,9 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 36
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 30
     m_MaxSize: 45
     m_Alignment: 0
@@ -14619,6 +14630,7 @@ MonoBehaviour:
   labelPanelID: 
   textManager: {fileID: 417565883}
   textTarget: {fileID: 752052573}
+  MaxNextTime: 0.05
   cardJudgeCount: 2
   cardJudge01:
   - {fileID: 52929505}
@@ -15432,8 +15444,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2105878152}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.13, y: 3.6000004, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 0.7, y: 0.76, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -15555,9 +15567,9 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 36
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 30
     m_MaxSize: 45
     m_Alignment: 0
@@ -15566,7 +15578,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5973\u513F\u6B7B\u53BB\u4E00\u5E74\u540E\uFF0C\u6211\u7684\u4F34\u4FA3\u8BF4\uFF0C\u6211\u4EEC\u4E5F\u5E94\u8BE5\u6362\u4E2A\u5730\u65B9\u4F4F\u3002\\n\u6211\u4E86\u89E3\u6211\u7684\u53E6\u4E00\u534A\u5728\u60F3\u4EC0\u4E48\uFF0C\u6B63\u5982\u6211\u4E86\u89E3\u81EA\u5DF1\u7684\u60F3\u6CD5\u3002\u6211\u4EEC\u90FD\u5BB3\u6015\u518D\u4E00\u6B21\u9762\u5BF9\u719F\u6089\u7684\u666F\u8C61\uFF0C\u5BB3\u6015\u9762\u5BF9\u90A3\u5F20\u5E8A\u2014\u2014\u5979\u66FE\u7ECF\u7AD9\u5728\u4E0A\u9762\uFF0C\u4F38\u624B\u5411\u6211\u4EEC\u8981\u62B1\u62B1\u3002\u5BB3\u6015\u518D\u6B21\u7ECF\u8FC7\u719F\u6089\u7684\u5546\u5E97\uFF0C\u5BB3\u6015\u770B\u89C1\u90A3\u9C9C\u8273\u7684\u5DE7\u514B\u529B\u8C46\u2014\u2014\u90A3\u662F\u5979\u6700\u559C\u6B22\u7684\u98DF\u7269\uFF0C\u53EF\u5982\u4ECA\uFF0C\u90A3\u4E9B\u9C9C\u8273\u7684\u8C46\u5B50\u5728\u5634\u91CC\u53EA\u5269\u4E0B\u82E6\u5473\u3002\\n\u6211\u4EEC\u4E70\u6765\u4E86\u8BB8\u591A\u7EB8\u7BB1\uFF0C\u7528\u4E8E\u642C\u5BB6\u3002\u6211\u7684\u4F34\u4FA3\u8BF4\uFF0C\u4E3A\u4EC0\u4E48\u4E0D\u642C\u5230\u4E61\u4E0B\u53BB\u5C45\u4F4F\u5462\uFF1F\u6211\u4EEC\u4F1A\u62E5\u6709\u4E00\u4E2A\u6211\u4EEC\u671F\u5F85\u5DF2\u4E45\u7684\u5C0F\u9662\u5B50\uFF0C\u6211\u4EEC\u53EF\u4EE5\u517B\u72D7\uFF0C\u53EF\u4EE5\u79CD\u4E9B\u82B1\u82B1\u8349\u8349\u3002"
+  m_Text: "\u5973\u513F\u6B7B\u53BB\u4E00\u5E74\u540E\uFF0C\u6211\u7684\u4F34\u4FA3\u8BF4\uFF0C\u6211\u4EEC\u4E5F\u5E94\u8BE5\u6362\u4E2A\u5730\u65B9\u4F4F\u3002\n\n\u6211\u4E86\u89E3\u6211\u7684\u53E6\u4E00\u534A\u5728\u60F3\u4EC0\u4E48\uFF0C\u6B63\u5982\u6211\u4E86\u89E3\u81EA\u5DF1\u7684\u60F3\u6CD5\u3002\u6211\u4EEC\u90FD\u5BB3\u6015\u518D\u4E00\u6B21\u9762\u5BF9\u719F\u6089\u7684\u666F\u8C61\uFF0C\u5BB3\u6015\u9762\u5BF9\u90A3\u5F20\u5E8A\u2014\u2014\u5979\u66FE\u7ECF\u7AD9\u5728\u4E0A\u9762\uFF0C\u4F38\u624B\u5411\u6211\u4EEC\u8981\u62B1\u62B1\u3002\u5BB3\u6015\u518D\u6B21\u7ECF\u8FC7\u719F\u6089\u7684\u5546\u5E97\uFF0C\u5BB3\u6015\u770B\u89C1\u90A3\u9C9C\u8273\u7684\u5DE7\u514B\u529B\u8C46\u2014\u2014\u90A3\u662F\u5979\u6700\u559C\u6B22\u7684\u98DF\u7269\uFF0C\u53EF\u5982\u4ECA\uFF0C\u90A3\u4E9B\u9C9C\u8273\u7684\u8C46\u5B50\u5728\u5634\u91CC\u53EA\u5269\u4E0B\u82E6\u5473\u3002\n\n\u6211\u4EEC\u4E70\u6765\u4E86\u8BB8\u591A\u7EB8\u7BB1\uFF0C\u7528\u4E8E\u642C\u5BB6\u3002\u6211\u7684\u4F34\u4FA3\u8BF4\uFF0C\u4E3A\u4EC0\u4E48\u4E0D\u642C\u5230\u4E61\u4E0B\u53BB\u5C45\u4F4F\u5462\uFF1F\u6211\u4EEC\u4F1A\u62E5\u6709\u4E00\u4E2A\u6211\u4EEC\u671F\u5F85\u5DF2\u4E45\u7684\u5C0F\u9662\u5B50\uFF0C\u6211\u4EEC\u53EF\u4EE5\u517B\u72D7\uFF0C\u53EF\u4EE5\u79CD\u4E9B\u82B1\u82B1\u8349\u8349\u3002"
 --- !u!222 &1760915625
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15622,8 +15634,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1761003932}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.91, y: -0.91, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 4.21, y: -0.76, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -15916,6 +15928,7 @@ MonoBehaviour:
   labelPanelID: 
   textManager: {fileID: 417565883}
   textTarget: {fileID: 733407505}
+  MaxNextTime: 0.05
   cardJudgeCount: 2
   cardJudge01:
   - {fileID: 2072035410}
@@ -16558,6 +16571,7 @@ MonoBehaviour:
   labelPanelID: 
   textManager: {fileID: 417565883}
   textTarget: {fileID: 1143679866}
+  MaxNextTime: 0.05
   cardJudgeCount: 1
   cardJudge01:
   - {fileID: 411645537}
@@ -17193,8 +17207,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1977905796}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.95, y: -0.91, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 6.47, y: -0.69, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -17409,9 +17423,9 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 36
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 30
     m_MaxSize: 45
     m_Alignment: 0
@@ -17420,7 +17434,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8D2B\u7A77\u7684\u9634\u5F71\u7B3C\u7F69\u7740\u6240\u6709\u4EBA\uFF0C\u800C\u540E\u6218\u4E89\u7206\u53D1\u4E86\u3002\u4F60\u4E0D\u80FD\u53BB\uFF0C\u6BCD\u4EB2\u8BF4\u3002\u6211\u652F\u6301\u4F60\uFF0C\u7236\u4EB2\u8BF4\u3002\u90A3\u91CC\u4E0D\u662F\u50CF\u4F60\u8FD9\u6837\u7684\u5B69\u5B50\u8BE5\u53BB\u7684\u5730\u65B9\uFF0C\u6BCD\u4EB2\u8BF4\u3002\\n\u6211\u8BF4\uFF0C\u5988\u5988\uFF0C\u6211\u4E0D\u4F1A\u6B7B\u5728\u90A3\u91CC\uFF0C\u4F60\u76F8\u4FE1\u6211\u5417\uFF1F\u56E0\u4E3A\u5728\u68A6\u91CC\uFF0C\u6211\u5E76\u4E0D\u662F\u6B7B\u5728\u6218\u573A\u4E0A\u3002\u540E\u6765\u6211\u7684\u786E\u56DE\u6765\u4E86\uFF0C\u5E26\u7740\u4E00\u4E2A\u95EA\u95EA\u53D1\u5149\u7684\u52CB\u7AE0\u2026\u2026"
+  m_Text: "\u8D2B\u7A77\u7684\u9634\u5F71\u7B3C\u7F69\u7740\u6240\u6709\u4EBA\uFF0C\u800C\u540E\u6218\u4E89\u7206\u53D1\u4E86\u3002\u4F60\u4E0D\u80FD\u53BB\uFF0C\u6BCD\u4EB2\u8BF4\u3002\u6211\u652F\u6301\u4F60\uFF0C\u7236\u4EB2\u8BF4\u3002\u90A3\u91CC\u4E0D\u662F\u50CF\u4F60\u8FD9\u6837\u7684\u5B69\u5B50\u8BE5\u53BB\u7684\u5730\u65B9\uFF0C\u6BCD\u4EB2\u8BF4\u3002\n\n\u6211\u8BF4\uFF0C\u5988\u5988\uFF0C\u6211\u4E0D\u4F1A\u6B7B\u5728\u90A3\u91CC\uFF0C\u4F60\u76F8\u4FE1\u6211\u5417\uFF1F\u56E0\u4E3A\u5728\u68A6\u91CC\uFF0C\u6211\u5E76\u4E0D\u662F\u6B7B\u5728\u6218\u573A\u4E0A\u3002\u540E\u6765\u6211\u7684\u786E\u56DE\u6765\u4E86\uFF0C\u5E26\u7740\u4E00\u4E2A\u95EA\u95EA\u53D1\u5149\u7684\u52CB\u7AE0\u2026\u2026"
 --- !u!222 &1994825263
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17510,6 +17524,7 @@ MonoBehaviour:
   labelPanelID: 
   textManager: {fileID: 417565883}
   textTarget: {fileID: 1552827118}
+  MaxNextTime: 0.05
   cardJudgeCount: 1
   cardJudge01:
   - {fileID: 79448109}
@@ -17758,8 +17773,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2023314043}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.0300002, y: 1.4099998, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 0.7, y: -1.06, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -17898,9 +17913,9 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 36
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 30
     m_MaxSize: 45
     m_Alignment: 0
@@ -17978,9 +17993,9 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 36
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 30
     m_MaxSize: 45
     m_Alignment: 0
@@ -17989,7 +18004,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6211\u7684\u5973\u513F\u8BF4\uFF0C\u5979\u60F3\u53BB\u6349\u51B0\u6676\u8776\u3002\u5979\u8BF4\u90A3\u662F\u4E00\u79CD\u751F\u6D3B\u5728\u4E25\u5BD2\u4E4B\u5730\u7684\u8774\u8776\uFF0C\u4F46\u4F1A\u4E3A\u4E86\u6700\u5E78\u8FD0\u7684\u5B69\u5B50\u51FA\u73B0\u5728\u4EFB\u4F55\u5730\u65B9\u3002\u5B83\u4EEC\u7684\u7FC5\u8180\u7531\u84DD\u8272\u7684\u6C34\u6676\u548C\u51B0\u5757\u7EC4\u6210\uFF0C\u4F1A\u53CD\u5C04\u51FA\u50CF\u73BB\u7483\u788E\u7247\u4E00\u6837\u6F02\u4EAE\u7684\u5149\u3002\u8FD9\u662F\u4E16\u754C\u4E0A\u6700\u6700\u6700\u6F02\u4EAE\u7684\u8774\u8776\u3002\\n\u6211\u7684\u4F34\u4FA3\u548C\u6211\u8BF4\uFF0C\u54EA\u6709\u8FD9\u6837\u7684\u8774\u8776\u5462\uFF1F\\n\u6211\u8BF4\uFF0C\u5F53\u7136\u53EF\u4EE5\u6709\u3002"
+  m_Text: "\u6211\u7684\u5973\u513F\u8BF4\uFF0C\u5979\u60F3\u53BB\u6349\u51B0\u6676\u8776\u3002\u5979\u8BF4\u90A3\u662F\u4E00\u79CD\u751F\u6D3B\u5728\u4E25\u5BD2\u4E4B\u5730\u7684\u8774\u8776\uFF0C\u4F46\u4F1A\u4E3A\u4E86\u6700\u5E78\u8FD0\u7684\u5B69\u5B50\u51FA\u73B0\u5728\u4EFB\u4F55\u5730\u65B9\u3002\u5B83\u4EEC\u7684\u7FC5\u8180\u7531\u84DD\u8272\u7684\u6C34\u6676\u548C\u51B0\u5757\u7EC4\u6210\uFF0C\u4F1A\u53CD\u5C04\u51FA\u50CF\u73BB\u7483\u788E\u7247\u4E00\u6837\u6F02\u4EAE\u7684\u5149\u3002\u8FD9\u662F\u4E16\u754C\u4E0A\u6700\u6700\u6700\u6F02\u4EAE\u7684\u8774\u8776\u3002\n\n\u6211\u7684\u4F34\u4FA3\u548C\u6211\u8BF4\uFF0C\u54EA\u6709\u8FD9\u6837\u7684\u8774\u8776\u5462\uFF1F\n\n\u6211\u8BF4\uFF0C\u5F53\u7136\u53EF\u4EE5\u6709\u3002"
 --- !u!222 &2053973600
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18171,8 +18186,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072035410}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.83, y: -0.8000002, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 1.83, y: -2.64, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -18761,8 +18776,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2126737555}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.52, y: 3.67, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 7.64, y: 2.72, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -19199,8 +19214,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4227104371830759196}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.58, y: -3.02, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 2.97, y: -2.54, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -19348,8 +19363,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4521630277021912939}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.75, y: -3.21, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 4.16, y: -2.49, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -19408,8 +19423,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4521630277161221729}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.37, y: -0.85, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 3, y: -0.85, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -19602,8 +19617,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4521630277323969067}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.32, y: -3.16, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 5.3, y: -2.42, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -19681,8 +19696,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4521630277774230408}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.16, y: -0.85, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 1.81, y: -1.02, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -20005,6 +20020,7 @@ MonoBehaviour:
   labelPanelID: 
   textManager: {fileID: 417565883}
   textTarget: {fileID: 5432327035881247138}
+  MaxNextTime: 0.05
   cardJudgeCount: 1
   cardJudge01:
   - {fileID: 5976081313617148303}
@@ -20080,18 +20096,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 36
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 30
-    m_MaxSize: 45
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u4E00\u5EA7\u5893\u7891\uFF0C\u8FD8\u5F88\u65B0\u3002\u770B\u5230\u8FD9\u5EA7\u5893\u7891\uFF0C\u4F60\u5C31\u77E5\u9053\u6709\u4E00\u4E2A\u4EBA\u66FE\u7ECF\u5B58\u5728\u8FC7\u3002\\n\uFF08\u6839\u636E\u6587\u5B57\uFF0C\u5C06\u5BF9\u5E94\u7684\u724C\u62D6\u5165\u5BF9\u5E94\u7684\u63D2\u753B\u4E2D\uFF09"
+  m_Text: "\u4E00\u5EA7\u5893\u7891\uFF0C\u8FD8\u5F88\u65B0\u3002\u770B\u5230\u8FD9\u5EA7\u5893\u7891\uFF0C\u4F60\u5C31\u77E5\u9053\u6709\u4E00\u4E2A\u4EBA\u66FE\u7ECF\u5B58\u5728\u8FC7\u3002\n\n\uFF08\u6839\u636E\u6587\u5B57\uFF0C\u5C06\u5BF9\u5E94\u7684\u724C\u62D6\u5165\u5BF9\u5E94\u7684\u63D2\u753B\u4E2D\uFF09"
 --- !u!222 &5432327035881247137
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20554,8 +20570,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5976081313127491070}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.42, y: -0.82, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 5.39, y: -0.65, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}
@@ -20707,8 +20723,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5976081313617148303}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.56, y: -0.84, z: -1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 7.71, y: -0.7, z: -1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719587594}

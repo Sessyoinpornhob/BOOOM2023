@@ -18,7 +18,8 @@ public class TextManager : MonoBehaviour
         CSVController.instance.loadFile();
         //根据索引读取csvController中的list（csv文件的内容）数据
         Debug.Log("Reading is " + CSVController.GetInstance().getString(row, col));
-        Debug.LogError("给你解决了，还不到隔壁叫爹");
+        // Debug.LogError("给你解决了，还不到隔壁叫爹");
+        // 谢谢跌
     }
 
 

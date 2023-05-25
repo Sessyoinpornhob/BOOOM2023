@@ -15,6 +15,9 @@ public class LabelPanel : MonoBehaviour
     public string labelPanelID; // 用于text判定
     public TextManager textManager;
     public GameObject textTarget; // 在LabelPanel上写入文本的地方
+    [Header("打字机效果")]
+    [Tooltip("单个字符的最大显示间隔")]
+    public float MaxNextTime = 0.05f;//显示下一个字的冷却时间
 
     // 这代码太弱智了，后面必须重构。
     [Header("Label替换")]
@@ -110,6 +113,47 @@ public class LabelPanel : MonoBehaviour
 
         string labelPanelText01 =  textManager.TextSearch(newGetCardID, 0);
         textTarget.GetComponent<Text>().text = labelPanelText01;
+        
+        labelPanelNewText = textManager.TextSearch(newGetCardID, 0);
+        textTarget.GetComponent<Text>().text = "";
+        TextNum = 0;
+        IsWrite = true;
+    }
+    
+    /*-------------------------打字机效果-----------------------------------*/
+    
+    string labelPanelNewText;//记录现在用要显示的文本
+    bool IsWrite;//现在是否在录入文字
+    float NextTextNewTime;
+    int TextNum;//正在使用文本上的第几个字
+
+    public void Update()
+    {
+        if (IsWrite)
+        {
+            NextTextNewTime += Time.deltaTime;
+            TextUseing();
+        }
+    }
+    public void TextUseing()
+    {
+        if (NextTextNewTime>=MaxNextTime)
+        {
+            NextTextNewTime = 0;//时间重置
+            TextNum++;
+            if (TextNum== labelPanelNewText.IndexOf("\\"))
+            {
+                TextNum += 2;
+                textTarget.GetComponent<Text>().text += "\n";
+            }
+
+            textTarget.GetComponent<Text>().text += labelPanelNewText[TextNum];
+            if (TextNum >= labelPanelNewText.Length-1)
+            {
+                IsWrite = false;
+                TextNum = 0;
+            }
+        }
     }
 
 }
