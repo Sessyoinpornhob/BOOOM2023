@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class TextManager : MonoBehaviour
 {
+    //public string filename
+    // row 是行数， column是列数
     public int row = 1, col = 0;
 
-    //public string filename;
-    // row 是行数， column是列数
 
 
 

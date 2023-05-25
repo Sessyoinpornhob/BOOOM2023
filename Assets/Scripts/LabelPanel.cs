@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class LabelPanel : MonoBehaviour
 {
     [Header("基础卡牌判定")]
-    public GameObject gameManager; // 获取gameManager
     public GameObject cardBar; // 获取卡牌的判定区，每个Panel只需要一个
     
     [Header("文本相关")]
@@ -62,7 +61,7 @@ public class LabelPanel : MonoBehaviour
     public void CardJudge(GameObject newGetCard)
     {
 
-        newGetCard = gameManager.GetComponent<GameManager>().NewGetCard;
+        newGetCard = GameManager.instance.NewGetCard;
         if (cardJudges[0] != null)
         {
             // newGetCard是否在cardJudge01(为例)中，如果在就删除表中对应元素
@@ -89,8 +88,6 @@ public class LabelPanel : MonoBehaviour
                         // 下一步包括active新的LabelIcon，这个函数的实现最好交给gamemanager。
                         Debug.Log("本标签全部任务完成->进行下一步");
                         
-                        // 将此标签已完成的信息传递到StageMannager，并执行检测函数（实际上跟下面的版本差不多）
-                        //gameManager.GetComponent<GameManager>().currentLabelPanel = gameObject;
                         gameStageManager.StageUpdate(currentLabelIcon);
                         gameStageManager.StageCheck();
 
@@ -110,7 +107,7 @@ public class LabelPanel : MonoBehaviour
     // 获取字符串和播放字符串
     public void GetTextInTextManager(GameObject newGetCard)
     {
-        newGetCard = gameManager.GetComponent<GameManager>().NewGetCard;
+        newGetCard = GameManager.instance.NewGetCard;
         string newGetCardID = newGetCard.GetComponent<Card>().cardID;
 
         string labelPanelText01 =  textManager.TextSearch(newGetCardID, 0);

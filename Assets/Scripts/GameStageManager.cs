@@ -5,9 +5,7 @@ using UnityEngine;
 // 设计这个class是为了在Label和Game之间再增加一个层，便于各种情况下的控制。
 public class GameStageManager : MonoBehaviour
 {
-    [Header("常用组件")] 
-    public GameManager gameManager;
-    
+
     [Header("当前阶段")]
     public int stageNumCurrent = 1;
     
@@ -73,7 +71,7 @@ public class GameStageManager : MonoBehaviour
     {
         foreach (GameObject obj in stagesBackup[stageNumCurrent - 1])
         {
-            GameObject objPanel = gameManager.GetThisPanel(obj);
+            GameObject objPanel = GameManager.instance.GetThisPanel(obj);
             obj.SetActive(false);
             objPanel.SetActive(false);
             Debug.Log(obj.name + " 应当被删除");
@@ -82,7 +80,7 @@ public class GameStageManager : MonoBehaviour
         }
         foreach (GameObject obj in stagesBackup[stageNumCurrent])
         {
-            GameObject objPanel = gameManager.GetThisPanel(obj);
+            GameObject objPanel = GameManager.instance.GetThisPanel(obj);
             obj.SetActive(true);
             objPanel.SetActive(true);
         }
