@@ -5,6 +5,9 @@ using UnityEngine;
 // 设计这个class是为了在Label和Game之间再增加一个层，便于各种情况下的控制。
 public class GameStageManager : MonoBehaviour
 {
+    [Header("常用组件")] 
+    public GameManager gameManager;
+    
     [Header("当前阶段")]
     public int stageNumCurrent = 1;
     
@@ -16,10 +19,10 @@ public class GameStageManager : MonoBehaviour
     
     // 屎山增加了。
     [Header("存储用列表")]
-    public List<List<GameObject>> stagesBackup = new List<List<GameObject>>();
     public List<GameObject> stage01Backup = new List<GameObject>();
     public List<GameObject> stage02Backup = new List<GameObject>();
     public List<GameObject> stage03Backup = new List<GameObject>();
+    public List<List<GameObject>> stagesBackup = new List<List<GameObject>>();
 
     
     void Start()
@@ -36,36 +39,12 @@ public class GameStageManager : MonoBehaviour
     // 将测试用列表存档，在后面读
     public void BackupList()
     {
-        stage01Backup = stage01;
-        stage02Backup = stage02;
-        stage03Backup = stage03;
         stagesBackup.Add(stage01Backup);
         stagesBackup.Add(stage02Backup);
         stagesBackup.Add(stage03Backup);
-        
         Debug.Log(stagesBackup[0][0].name);
-
         //stagesBackup = DeepCopy(stages);
     }
-
-    
-    // 深度拷贝List stages
-    public List<List<GameObject>> DeepCopy(List<List<GameObject>> original)
-    {
-        List<List<GameObject>> copy = new List<List<GameObject>>();
-        foreach (List<GameObject> list in original)
-        {
-            List<GameObject> newList = new List<GameObject>();
-            foreach (GameObject obj in list)
-            {
-                GameObject newObj = Instantiate(obj);
-                newList.Add(newObj);
-            }
-            copy.Add(newList);
-        }
-        return copy;
-    }
-
     
 
     // 将已完成的某个Icon传递到此函数中，在对应的列表里删除东西
@@ -94,12 +73,18 @@ public class GameStageManager : MonoBehaviour
     {
         foreach (GameObject obj in stagesBackup[stageNumCurrent - 1])
         {
+            GameObject objPanel = gameManager.GetThisPanel(obj);
             obj.SetActive(false);
+            objPanel.SetActive(false);
             Debug.Log(obj.name + " 应当被删除");
+            // 加动画
+            
         }
         foreach (GameObject obj in stagesBackup[stageNumCurrent])
         {
+            GameObject objPanel = gameManager.GetThisPanel(obj);
             obj.SetActive(true);
+            objPanel.SetActive(true);
         }
         stageNumCurrent++;
     }

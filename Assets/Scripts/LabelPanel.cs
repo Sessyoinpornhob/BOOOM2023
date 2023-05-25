@@ -93,13 +93,6 @@ public class LabelPanel : MonoBehaviour
                         //gameManager.GetComponent<GameManager>().currentLabelPanel = gameObject;
                         gameStageManager.StageUpdate(currentLabelIcon);
                         gameStageManager.StageCheck();
-                        
-                        // 将自己赋值到GM中。 完成后将这段废弃。
-                        /*
-                        gameManager.GetComponent<GameManager>().currentLabelPanel = gameObject;
-                        gameManager.GetComponent<GameManager>().SwitchIconAndPanel(gameObject);
-                        */
-
 
                     }
                 }
