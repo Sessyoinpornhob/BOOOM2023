@@ -28,8 +28,7 @@ public class ImageManager : MonoBehaviour
 
         string m_path = "PicSprites/" + nameInCsv;
         Debug.Log("m_path = " + m_path);
-        Debug.Log(m_path == "PicSprites/0_2");
-        var sp = Resources.Load<Sprite>("PicSprites/0_2");
+        var sp = Resources.Load<Sprite>(m_path);
         Debug.Log(sp);
 
         target.sprite = sp;

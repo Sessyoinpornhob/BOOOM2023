@@ -13,9 +13,7 @@ public class TextManager : MonoBehaviour
         //csvController加载csv文件，单例模式，这个类只有一个对象，这个对象只能加载一个csv文件
         CSVController.instance.loadFile();
         //根据索引读取csvController中的list（csv文件的内容）数据
-        Debug.Log("Reading is " + CSVController.GetInstance().getString(row, col));
-        // Debug.LogError("给你解决了，还不到隔壁叫爹");
-        // 谢谢跌
+        //Debug.Log("Reading is " + CSVController.GetInstance().getString(row, col));
     }
 
 
@@ -50,7 +48,7 @@ public class TextManager : MonoBehaviour
 
         // 搜索对应的坐标
         Vector2Int result = SearchStringInCSV(searchString);
-        Debug.Log("The string '" + searchString + "' is found at row " + result.x + " and col " + result.y);
+        //Debug.Log("The string '" + searchString + "' is found at row " + result.x + " and col " + result.y);
 
         // 获取左边和右边的字符串 用于确认和判定位置
         string searchStringLeft = csvController.getString(result.x, result.y - 1);

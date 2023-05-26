@@ -128,7 +128,7 @@ public class LabelPanel : MonoBehaviour
         // 做一个空检测，以防出现此处不需要插画改变的情况。
         string spriteString = textManager.TextSearch(newGetCardID, 2);
 
-        Debug.Log("spriteString = " + spriteString);
+        //Debug.Log("spriteString = " + spriteString);
         return spriteString;// 这里有可能返回null
     }
 
@@ -137,7 +137,7 @@ public class LabelPanel : MonoBehaviour
     {
         var instancedImage =  Instantiate(refImage,gameObject.transform);
         var instancedImageComponent = instancedImage.GetComponent<Image>();
-        Debug.Log("instancedImageComponent name = " + instancedImageComponent );
+        //Debug.Log("instancedImageComponent name = " + instancedImageComponent );
         ImageManager.instance.SwitchSprite(instancedImageComponent, spriteString);
 
     }
