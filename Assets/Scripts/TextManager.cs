@@ -26,6 +26,7 @@ public class TextManager : MonoBehaviour
         // 遍历CSV文件的行和列
         for (int r = 0; r < csvController.getRowCount(); r++)
         {
+            // 当时认为一共就三列，但现在看来其实也差不多够用
             for (int c = 0; c < 3; c++)
             {
                 // 如果找到匹配的字符串，返回行和列
