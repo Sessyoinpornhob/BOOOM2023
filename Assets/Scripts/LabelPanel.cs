@@ -33,6 +33,9 @@ public class LabelPanel : MonoBehaviour
     [Header("游戏阶段判定")]
     public GameStageManager gameStageManager;
     public GameObject currentLabelIcon; // 匹配的LabelIcon
+
+    [Header("图片生成设置")] 
+    public Image targetImage;
     
 
     public void Start()
@@ -67,20 +70,32 @@ public class LabelPanel : MonoBehaviour
             // newGetCard是否在cardJudge01(为例)中，如果在就删除表中对应元素
             if (cardJudges[0].IndexOf(newGetCard) != -1)
             {
+                
                 Debug.Log(newGetCard.name + " is Right");
+                
                 // 生成新的文本
                 GetTextInTextManager(newGetCard);
                 cardJudges[0].RemoveAt(cardJudges[0].IndexOf(newGetCard));
+                
+                // 生成图片 能用 下面是要改Sprite
+                var spriteString = GetSpriteString(newGetCard);
+                if (spriteString != "null")
+                {
+                    InstantiateNewImage(targetImage.gameObject, spriteString);
+                }
                 
                 // 当cardJudge01列表里没东西了以后视为成功
                 if (cardJudges[0].Count == 0)
                 {
                     // 成功后播放CG并删除cardJudges表中首个list，当cardJudge01(为例)
-                    Debug.Log("播放CG");
+                    // Debug.Log("播放CG");
+                    
+                    // 这个地方需要加一些判定来分流不同的图片生成的时机。
+                    
                     if (cardJudges.Count != 1)
                     {
                         cardJudges.RemoveAt(0);
-                        Debug.Log("删除首个判定点");
+                        //Debug.Log("删除首个判定点");
                     }
                     else
                     {
@@ -104,23 +119,47 @@ public class LabelPanel : MonoBehaviour
         
     }
     
+    
+    /*---------------------------图片相关-------------------------------*/
+    // 获取图片在CSV中的字符串
+    public string GetSpriteString(GameObject newGetCard)
+    {
+        string newGetCardID = newGetCard.GetComponent<Card>().cardID;
+        // 做一个空检测，以防出现此处不需要插画改变的情况。
+        string spriteString = textManager.TextSearch(newGetCardID, 2);
+
+        Debug.Log("spriteString = " + spriteString);
+        return spriteString;// 这里有可能返回null
+    }
+
+    // 实例化Image，然后更换Sprite。找时间改到IM里面去。
+    public void InstantiateNewImage(GameObject refImage, string spriteString)
+    {
+        var instancedImage =  Instantiate(refImage,gameObject.transform);
+        var instancedImageComponent = instancedImage.GetComponent<Image>();
+        Debug.Log("instancedImageComponent name = " + instancedImageComponent );
+        ImageManager.instance.SwitchSprite(instancedImageComponent, spriteString);
+
+    }
+
+
+    /*-------------------------文本生成相关-----------------------------*/
     // 获取字符串和播放字符串
     public void GetTextInTextManager(GameObject newGetCard)
     {
-        newGetCard = GameManager.instance.NewGetCard;
         string newGetCardID = newGetCard.GetComponent<Card>().cardID;
 
-        string labelPanelText01 =  textManager.TextSearch(newGetCardID, 0);
+        string labelPanelText01 = textManager.TextSearch(newGetCardID, 1);
         textTarget.GetComponent<Text>().text = labelPanelText01;
         
-        labelPanelNewText = textManager.TextSearch(newGetCardID, 0);
+        labelPanelNewText = textManager.TextSearch(newGetCardID, 1);
         textTarget.GetComponent<Text>().text = "";
         TextNum = 0;
         IsWrite = true;
     }
     
-    /*-------------------------打字机效果-----------------------------------*/
     
+    /*-----------------------打字机效果-------------------------------*/
     string labelPanelNewText;//记录现在用要显示的文本
     bool IsWrite;//现在是否在录入文字
     float NextTextNewTime;

@@ -5,13 +5,9 @@ using UnityEngine;
 
 public class TextManager : MonoBehaviour
 {
-    //public string filename
     // row 是行数， column是列数
     public int row = 1, col = 0;
-
-
-
-
+    
     void Start()
     {
         //csvController加载csv文件，单例模式，这个类只有一个对象，这个对象只能加载一个csv文件
@@ -59,16 +55,24 @@ public class TextManager : MonoBehaviour
         // 获取左边和右边的字符串 用于确认和判定位置
         string searchStringLeft = csvController.getString(result.x, result.y - 1);
         string searchStringRight = csvController.getString(result.x, result.y + 1);
+        
+        // 获取插画名 --------> 做一个null检测，以防出现此处不需要插画改变的情况。
+        string searchStringOfSprite = csvController.getString(result.x, result.y + 3);
+        
         Debug.Log("searchStringLeft= " + searchStringLeft + " and " + "searchStringRight= " + searchStringRight);
 
         // 取左取右 有点傻 等待重构
-        if (needmode == 1)
+        if (needmode == 0)
         {
             return searchStringLeft;
         }
-        else if (needmode == 0)
+        else if (needmode == 1)
         {
             return searchStringRight;
+        }
+        else if (needmode == 2)
+        {
+            return searchStringOfSprite;
         }
         return "-1";
     }

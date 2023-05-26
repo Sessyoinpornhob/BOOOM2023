@@ -3210,7 +3210,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03007a09180610446ab2bf19855766fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   cardBar: {fileID: 1778997418}
   labelPanelID: 
   textManager: {fileID: 417565883}
@@ -3225,6 +3224,7 @@ MonoBehaviour:
   cardJudge05: []
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 1047604100}
+  targetImage: {fileID: 0}
 --- !u!95 &290033650
 Animator:
   serializedVersion: 5
@@ -3646,7 +3646,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03007a09180610446ab2bf19855766fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   cardBar: {fileID: 1220975546}
   labelPanelID: 
   textManager: {fileID: 417565883}
@@ -3662,6 +3661,7 @@ MonoBehaviour:
   cardJudge05: []
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 1256955274}
+  targetImage: {fileID: 0}
 --- !u!95 &301716428
 Animator:
   serializedVersion: 5
@@ -4420,6 +4420,7 @@ GameObject:
   - component: {fileID: 417565883}
   - component: {fileID: 417565884}
   - component: {fileID: 417565885}
+  - component: {fileID: 417565886}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -4599,7 +4600,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a9fccee0a1e31f4ea958d3eac62adb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565882}
   stageNumCurrent: 1
   stage01:
   - {fileID: 1457344945}
@@ -4639,6 +4639,19 @@ MonoBehaviour:
   - {fileID: 1047604100}
   stage03Backup:
   - {fileID: 217713028}
+--- !u!114 &417565886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417565877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4125783c756baca4c9039e68f503fbd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textManager: {fileID: 417565883}
 --- !u!1 &418040962
 GameObject:
   m_ObjectHideFlags: 0
@@ -4978,7 +4991,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03007a09180610446ab2bf19855766fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   cardBar: {fileID: 976032648}
   labelPanelID: 
   textManager: {fileID: 417565883}
@@ -4994,6 +5006,7 @@ MonoBehaviour:
   cardJudge05: []
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 167967375}
+  targetImage: {fileID: 0}
 --- !u!95 &453746100
 Animator:
   serializedVersion: 5
@@ -5074,7 +5087,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b487e09146998bb40b093ae4fb994b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   newGetCard: {fileID: 0}
   LabelPanel: {fileID: 1774910111}
 --- !u!114 &455885652
@@ -5975,7 +5987,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b487e09146998bb40b093ae4fb994b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   newGetCard: {fileID: 0}
   LabelPanel: {fileID: 1325245004}
 --- !u!114 &557572047
@@ -6361,7 +6372,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b487e09146998bb40b093ae4fb994b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   newGetCard: {fileID: 0}
   LabelPanel: {fileID: 634586030}
 --- !u!114 &611181029
@@ -6569,7 +6579,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03007a09180610446ab2bf19855766fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   cardBar: {fileID: 611181026}
   labelPanelID: 
   textManager: {fileID: 417565883}
@@ -6585,6 +6594,7 @@ MonoBehaviour:
   cardJudge05: []
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 1706955502}
+  targetImage: {fileID: 0}
 --- !u!95 &634586031
 Animator:
   serializedVersion: 5
@@ -6665,7 +6675,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b487e09146998bb40b093ae4fb994b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   newGetCard: {fileID: 0}
   LabelPanel: {fileID: 1531568162}
 --- !u!114 &636197209
@@ -7238,7 +7247,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03007a09180610446ab2bf19855766fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   cardBar: {fileID: 1581649401}
   labelPanelID: 
   textManager: {fileID: 417565883}
@@ -7254,6 +7262,7 @@ MonoBehaviour:
   cardJudge05: []
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 2086415854}
+  targetImage: {fileID: 0}
 --- !u!95 &686352695
 Animator:
   serializedVersion: 5
@@ -9136,7 +9145,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b487e09146998bb40b093ae4fb994b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   newGetCard: {fileID: 0}
   LabelPanel: {fileID: 1541011314}
 --- !u!114 &893790987
@@ -9654,7 +9662,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03007a09180610446ab2bf19855766fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   cardBar: {fileID: 1738365188}
   labelPanelID: 
   textManager: {fileID: 417565883}
@@ -9671,6 +9678,7 @@ MonoBehaviour:
   cardJudge05: []
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 295094067}
+  targetImage: {fileID: 1669834055}
 --- !u!95 &956019036
 Animator:
   serializedVersion: 5
@@ -9751,7 +9759,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b487e09146998bb40b093ae4fb994b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   newGetCard: {fileID: 0}
   LabelPanel: {fileID: 453746099}
 --- !u!114 &976032651
@@ -10365,7 +10372,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03007a09180610446ab2bf19855766fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   cardBar: {fileID: 1361126143}
   labelPanelID: 
   textManager: {fileID: 417565883}
@@ -10381,6 +10387,7 @@ MonoBehaviour:
   cardJudge05: []
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 1297409261}
+  targetImage: {fileID: 0}
 --- !u!95 &1106477991
 Animator:
   serializedVersion: 5
@@ -10900,7 +10907,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b487e09146998bb40b093ae4fb994b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   newGetCard: {fileID: 0}
   LabelPanel: {fileID: 301716427}
 --- !u!114 &1220975549
@@ -11641,7 +11647,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03007a09180610446ab2bf19855766fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   cardBar: {fileID: 557572044}
   labelPanelID: 
   textManager: {fileID: 417565883}
@@ -11657,6 +11662,7 @@ MonoBehaviour:
   cardJudge05: []
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 1500056694}
+  targetImage: {fileID: 0}
 --- !u!95 &1325245005
 Animator:
   serializedVersion: 5
@@ -11864,7 +11870,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b487e09146998bb40b093ae4fb994b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   newGetCard: {fileID: 0}
   LabelPanel: {fileID: 1106477990}
 --- !u!114 &1361126146
@@ -13024,7 +13029,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03007a09180610446ab2bf19855766fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   cardBar: {fileID: 636197206}
   labelPanelID: 
   textManager: {fileID: 417565883}
@@ -13040,6 +13044,7 @@ MonoBehaviour:
   - {fileID: 1621638183}
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 747178751}
+  targetImage: {fileID: 0}
 --- !u!95 &1531568163
 Animator:
   serializedVersion: 5
@@ -13125,7 +13130,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03007a09180610446ab2bf19855766fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   cardBar: {fileID: 893790984}
   labelPanelID: 
   textManager: {fileID: 417565883}
@@ -13142,6 +13146,7 @@ MonoBehaviour:
   cardJudge05: []
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 983091179}
+  targetImage: {fileID: 0}
 --- !u!95 &1541011315
 Animator:
   serializedVersion: 5
@@ -13227,7 +13232,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03007a09180610446ab2bf19855766fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   cardBar: {fileID: 2003656491}
   labelPanelID: 
   textManager: {fileID: 417565883}
@@ -13242,6 +13246,7 @@ MonoBehaviour:
   cardJudge05: []
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 0}
+  targetImage: {fileID: 0}
 --- !u!95 &1545093855
 Animator:
   serializedVersion: 5
@@ -13402,7 +13407,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b487e09146998bb40b093ae4fb994b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   newGetCard: {fileID: 0}
   LabelPanel: {fileID: 1995787629}
 --- !u!114 &1554485277
@@ -13494,7 +13498,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b487e09146998bb40b093ae4fb994b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   newGetCard: {fileID: 0}
   LabelPanel: {fileID: 686352694}
 --- !u!114 &1581649404
@@ -14701,7 +14704,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03007a09180610446ab2bf19855766fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   cardBar: {fileID: 2017442137}
   labelPanelID: 
   textManager: {fileID: 417565883}
@@ -14717,6 +14719,7 @@ MonoBehaviour:
   cardJudge05: []
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 217713028}
+  targetImage: {fileID: 0}
 --- !u!95 &1665212579
 Animator:
   serializedVersion: 5
@@ -14828,7 +14831,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 56.97, y: -244.07}
-  m_SizeDelta: {x: 665.6, y: 488.14}
+  m_SizeDelta: {x: 600, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1669834055
 MonoBehaviour:
@@ -14850,7 +14853,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5ab85408405140148b8f4ed5f9f6a1fe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b0b274ad673f3a641ab5fd218280e432, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -15457,7 +15460,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b487e09146998bb40b093ae4fb994b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   newGetCard: {fileID: 0}
   LabelPanel: {fileID: 1806528658}
 --- !u!114 &1734814257
@@ -15549,7 +15551,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b487e09146998bb40b093ae4fb994b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   newGetCard: {fileID: 0}
   LabelPanel: {fileID: 956019035}
 --- !u!114 &1738365191
@@ -16077,7 +16078,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03007a09180610446ab2bf19855766fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   cardBar: {fileID: 455885649}
   labelPanelID: 
   textManager: {fileID: 417565883}
@@ -16094,6 +16094,7 @@ MonoBehaviour:
   cardJudge05: []
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 946215989}
+  targetImage: {fileID: 0}
 --- !u!95 &1774910112
 Animator:
   serializedVersion: 5
@@ -16308,7 +16309,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b487e09146998bb40b093ae4fb994b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   newGetCard: {fileID: 0}
   LabelPanel: {fileID: 290033649}
 --- !u!114 &1778997421
@@ -16722,7 +16722,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03007a09180610446ab2bf19855766fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   cardBar: {fileID: 1734814254}
   labelPanelID: 
   textManager: {fileID: 417565883}
@@ -16737,6 +16736,7 @@ MonoBehaviour:
   cardJudge05: []
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 1138720146}
+  targetImage: {fileID: 0}
 --- !u!95 &1806528659
 Animator:
   serializedVersion: 5
@@ -17677,7 +17677,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03007a09180610446ab2bf19855766fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   cardBar: {fileID: 1554485274}
   labelPanelID: 
   textManager: {fileID: 417565883}
@@ -17693,6 +17692,7 @@ MonoBehaviour:
   cardJudge05: []
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 1767926606}
+  targetImage: {fileID: 0}
 --- !u!95 &1995787630
 Animator:
   serializedVersion: 5
@@ -17773,7 +17773,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b487e09146998bb40b093ae4fb994b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   newGetCard: {fileID: 0}
   LabelPanel: {fileID: 1545093854}
 --- !u!114 &2003656494
@@ -17865,7 +17864,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b487e09146998bb40b093ae4fb994b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   newGetCard: {fileID: 0}
   LabelPanel: {fileID: 1665212578}
 --- !u!114 &2017442140
@@ -20175,7 +20173,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03007a09180610446ab2bf19855766fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   cardBar: {fileID: 5432327036254132201}
   labelPanelID: 
   textManager: {fileID: 417565883}
@@ -20190,6 +20187,7 @@ MonoBehaviour:
   cardJudge05: []
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 1457344945}
+  targetImage: {fileID: 0}
 --- !u!224 &5432327035156108776
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20645,7 +20643,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b487e09146998bb40b093ae4fb994b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 417565877}
   newGetCard: {fileID: 0}
   LabelPanel: {fileID: 5432327034958518174}
 --- !u!114 &5432327036296321480
