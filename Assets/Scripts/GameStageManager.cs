@@ -108,6 +108,11 @@ public class GameStageManager : MonoBehaviour
             objPanel.SetActive(true);
         }
         stageNumCurrent++;
+
+        if (stageNumCurrent == 2)
+        {
+            CardSender.instance.FlipCards("2");
+        }
     }
     
 }

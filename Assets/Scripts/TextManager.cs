@@ -61,6 +61,8 @@ public class TextManager : MonoBehaviour
         // 非固定顺序同时满足标识符  --------->  只有Yes和null
         string searchStringDouble = csvController.getString(result.x, result.y + 4);
         
+        string searchStringCardSenderListNum = csvController.getString(result.x, result.y + 5);
+        
         
         Debug.Log("searchStringLeft= " + searchStringLeft + " and " + "searchStringRight= " + searchStringRight);
 
@@ -80,6 +82,10 @@ public class TextManager : MonoBehaviour
         else if (needmode == 3)
         {
             return searchStringDouble;
+        }
+        else if (needmode == 4)
+        {
+            return searchStringCardSenderListNum;
         }
         return "-1";
     }

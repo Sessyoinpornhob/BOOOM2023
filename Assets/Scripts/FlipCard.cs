@@ -21,16 +21,8 @@ public class FlipCard : MonoBehaviour
     {
         //canFlipCpunt = 1;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            StartFlip();
-        }
-    }
     
+
     // 最后由程序告诉编辑器，何时翻面（按照阶段）
     public void StartFlip()
     {

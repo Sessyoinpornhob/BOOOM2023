@@ -95,7 +95,9 @@ public class LabelPanel : MonoBehaviour
                     // -----------------------游戏内容更新--------------------------
                     // 在一个CardJudge完成后（位置2）输出文本
                     GetTextInTextManager(newGetCard,2);
-                    
+                    // 检测要不要给新卡牌
+                    GetCardSenderListNum(newGetCard);
+
                     // -----------------------游戏机制更新--------------------------
                     if (cardJudges.Count != 1)
                     {
@@ -178,6 +180,17 @@ public class LabelPanel : MonoBehaviour
             }
         }
 
+    }
+
+    // ------------------------------获取新牌-------------------------------------
+    public void GetCardSenderListNum(GameObject newGetCard)
+    {
+        string newGetCardID = newGetCard.GetComponent<Card>().cardID;
+        string cardSenderListNum = textManager.TextSearch(newGetCardID, 4);
+        if (cardSenderListNum != null)
+        {
+            CardSender.instance.FlipCards(cardSenderListNum);
+        }
     }
     
     
