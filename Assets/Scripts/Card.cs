@@ -10,8 +10,7 @@ public class Card : MonoBehaviour
     [Header("基础信息")]
     public string cardID;
     public bool canUse = true; // 卡片是否可用
-    public int useMath; // 卡片的使用次数 归零消失
-    
+
     [Header("判定相关")]
     public CardBar targetCardBar;
 
@@ -56,12 +55,20 @@ public class Card : MonoBehaviour
                 SoundManager.instance.GetClickAudio();
             }
         }
-        
         transform.position = new Vector3(transform.position.x, transform.position.y,-2);
         audioPlayCount = 1;
-        
         // 检测卡片正确以后，播放特效VFX
-        
+    }
+
+    public void DestorySelf()
+    {
+        StartCoroutine(WaitAnimater());
+    }
+    IEnumerator WaitAnimater()
+    {
+        // 等待的时间就在这写吧，感觉public出去会有问题
+        yield return new WaitForSeconds(0.5f);
+        gameObject.SetActive(false);
     }
 
 }

@@ -84,8 +84,11 @@ public class LabelPanel : MonoBehaviour
                     InstantiateNewImage(targetImage.gameObject, spriteString);
                 }
                 
-                // -----------------------游戏机制更新--------------------------
+                // -----------------------游戏机制更新---------------------------
                 cardJudges[0].RemoveAt(cardJudges[0].IndexOf(newGetCard));
+                
+                // ---------------------卡牌可用次数更新--------------------------
+                GameManager.instance.NewGetCard.GetComponent<Card>().DestorySelf();
 
 
                 // 当cardJudge01列表里没东西了以后视为成功
@@ -106,9 +109,8 @@ public class LabelPanel : MonoBehaviour
                     }
                     else
                     {
-                        // 这个地方算是判定完成了整个标签的内容
-                        // 下一步包括active新的LabelIcon，这个函数的实现最好交给gamemanager。
                         Debug.Log("本标签全部任务完成->进行下一步");
+                        StartCoroutine(WaitAnimator());
                         
                         gameStageManager.StageUpdate(currentLabelIcon);
                         gameStageManager.StageCheck();
@@ -120,6 +122,29 @@ public class LabelPanel : MonoBehaviour
         Debug.Log("完成了一次判定");
     }
 
+    // 协程等待的时间在这写。
+    IEnumerator WaitAnimator()
+    {
+        while (IsWrite)
+        {
+            yield return null; // 
+        }
+        
+        // 等待的时间就在这写吧，感觉public出去会有问题
+        yield return new WaitForSeconds(1f); // 如果能获取到打字机将文本输入完会更好。不用时间或者用某些变量？
+        var currentLabelIconCanvasGroup = gameObject.GetComponent<CanvasGroup>();
+        //var alpha = 1f;
+        //while(alpha>=0)
+        //{
+        //    alpha -= 0.01f;
+        //    currentLabelIconCanvasGroup.alpha = alpha;
+        //    yield return null;
+        //}
+        currentLabelIcon.SetActive(false);
+        currentLabelIconCanvasGroup.alpha = 1f;
+        gameObject.SetActive(false);
+            
+    }
 
     /*---------------------------图片相关-------------------------------*/
     // 获取图片在CSV中的字符串
