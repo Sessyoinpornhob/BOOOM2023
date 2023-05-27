@@ -52,7 +52,7 @@ public class LabelPanel : MonoBehaviour
         cardJudges.Add(cardJudge03);
         cardJudges.Add(cardJudge04);
         cardJudges.Add(cardJudge05);
-        Debug.Log(cardJudges.Count);
+        //Debug.Log(cardJudges.Count);
         
         for (int i = 0; i < (5-cardJudgeCount); i++)
         {

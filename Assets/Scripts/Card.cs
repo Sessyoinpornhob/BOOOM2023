@@ -7,11 +7,10 @@ using UnityEngine.UI;
 public class Card : MonoBehaviour
 {
     public string cardID;
-    //[HideInInspector]public string cardName;
-    //[HideInInspector]public string cardText;
-    //[HideInInspector]public string finCardText; // 完成卡片之后的文本
     public bool isNote; // 卡片是否自由
     public int useMath; // 卡片的使用次数 归零消失
+
+    public CardBar targetCardBar;
 
     public void OnMouseDrag()//拖拽卡片
     {
@@ -27,9 +26,14 @@ public class Card : MonoBehaviour
     
     public void OnMouseUp()//放开卡片
     {
-        //Debug.Log("Drag ended!");
-        transform.position = new Vector3(transform.position.x, transform.position.y,-1);
+        if (targetCardBar != null)
+        {
+            targetCardBar.SendToCardJudge();
+        }
+        
+        transform.position = new Vector3(transform.position.x, transform.position.y,-2);
         // 检测卡片正确以后，播放特效VFX
+        //canJudgeInBar = false;
     }
 
 }
