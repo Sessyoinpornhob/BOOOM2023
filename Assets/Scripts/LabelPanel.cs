@@ -75,6 +75,7 @@ public class LabelPanel : MonoBehaviour
                 
                 // 生成新的文本
                 GetTextInTextManager(newGetCard);
+                SoundManager.instance.GetIntoAudio();// 调用音效
                 cardJudges[0].RemoveAt(cardJudges[0].IndexOf(newGetCard));
                 
                 // 生成图片 能用 下面是要改Sprite
@@ -113,13 +114,7 @@ public class LabelPanel : MonoBehaviour
         Debug.Log("完成了一次判定");
     }
 
-    // 看情况将CardBar启用或禁用
-    public void CardBarOnAndOff(GameObject targetCardBar)
-    {
-        
-    }
-    
-    
+
     /*---------------------------图片相关-------------------------------*/
     // 获取图片在CSV中的字符串
     public string GetSpriteString(GameObject newGetCard)
@@ -161,7 +156,8 @@ public class LabelPanel : MonoBehaviour
     
     /*-----------------------打字机效果-------------------------------*/
     string labelPanelNewText;//记录现在用要显示的文本
-    bool IsWrite;//现在是否在录入文字
+    [Header("打字机效果")]
+    public bool IsWrite;//现在是否在录入文字
     float NextTextNewTime;
     int TextNum;//正在使用文本上的第几个字
 

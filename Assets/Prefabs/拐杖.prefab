@@ -195,7 +195,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7074342569711859044}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
@@ -246,6 +246,8 @@ MonoBehaviour:
   cardID: GuaiZhang
   isNote: 0
   useMath: 0
+  targetCardBar: {fileID: 0}
+  audioPlayCount: 1
 --- !u!212 &7074342569711859049
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,21 +7,39 @@ using UnityEngine.UI;
 [ExecuteInEditMode]
 public class Card : MonoBehaviour
 {
+    [Header("基础信息")]
     public string cardID;
-    public bool isNote; // 卡片是否自由
+    public bool canUse = true; // 卡片是否可用
     public int useMath; // 卡片的使用次数 归零消失
-
+    
+    [Header("判定相关")]
     public CardBar targetCardBar;
+
+    [Header("音频视效相关")] 
+    public int audioPlayCount;
+
+    private void Start()
+    {
+        audioPlayCount = 1;
+        canUse = false;
+    }
 
     public void OnMouseDrag()//拖拽卡片
     {
-        if (isNote==false)
+        if (canUse == true)
         {
             GameManager.instance.NewGetCard = gameObject;
             Vector2 m_mousePostion = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = new Vector3(m_mousePostion.x, m_mousePostion.y,-2);
             // 设置位置
             // 使得GameManager可以检测到此卡片的存在
+
+            // 拖拽卡牌的时候要发出声音吗？
+            if (audioPlayCount > 0)
+            {
+                //SoundManager.instance.GetClickAudio();
+                audioPlayCount--;
+            }
         }
     }
     
@@ -30,10 +49,19 @@ public class Card : MonoBehaviour
         {
             targetCardBar.SendToCardJudge();
         }
+        else
+        {
+            if (canUse)
+            {
+                SoundManager.instance.GetClickAudio();
+            }
+        }
         
         transform.position = new Vector3(transform.position.x, transform.position.y,-2);
+        audioPlayCount = 1;
+        
         // 检测卡片正确以后，播放特效VFX
-        //canJudgeInBar = false;
+        
     }
 
 }

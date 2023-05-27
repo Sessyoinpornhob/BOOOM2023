@@ -30,14 +30,17 @@ public class FlipCard : MonoBehaviour
             StartFlip();
         }
     }
-
+    
+    // 最后由程序告诉编辑器，何时翻面（按照阶段）
     public void StartFlip()
     {
         if (canFlipCpunt > 0)
         {
             StartCoroutine(CalculateFlip());
         }
-        
+
+        gameObject.GetComponent<Card>().canUse = true;
+
     }
 
     public void Flip()

@@ -22,6 +22,8 @@ public class GameStageManager : MonoBehaviour
     public List<GameObject> stage03Backup = new List<GameObject>();
     public List<List<GameObject>> stagesBackup = new List<List<GameObject>>();
 
+    [Header("动画和音效相关")] public float waitingtime;
+
     
     void Start()
     {
@@ -62,13 +64,34 @@ public class GameStageManager : MonoBehaviour
         if (stages[stageNumCurrent - 1].Count == 0)
         {
             Debug.Log("本阶段标签都已完成");
-            StageSwitch();
+            StageSwitchSFXVFX();
         }
     }
 
+    
     // DisActive本阶段所有的Label，Active下个阶段所有的Label
+    public void StageSwitchSFXVFX()
+    {
+        // 视觉和听觉效果
+        waitingtime = SoundManager.instance.GetFinishEventAudio();// 放音乐，返回音效时长。
+        StartCoroutine(StageWaitForSound());// 开始协程
+        
+    }
+    
+    // 协程，在waitingtime后，切换标签。
+    IEnumerator StageWaitForSound()
+    {
+        yield return new WaitForSeconds(waitingtime);
+        Debug.Log("waitingtime = "+ waitingtime);
+        Debug.Log("musicFinished");
+        // 在这个函数中写需要延迟调用的内容。
+        StageSwitch();
+    }
+
+    // 标签和游戏功能切换
     public void StageSwitch()
     {
+        // 标签和游戏功能
         foreach (GameObject obj in stagesBackup[stageNumCurrent - 1])
         {
             GameObject objPanel = GameManager.instance.GetThisPanel(obj);
@@ -86,7 +109,5 @@ public class GameStageManager : MonoBehaviour
         }
         stageNumCurrent++;
     }
-    
-    
     
 }
