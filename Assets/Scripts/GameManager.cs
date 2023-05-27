@@ -29,11 +29,6 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
 
-    public void Start()
-    {
-        
-    }
-
     // 查找_currentLabelPanel在list labelPanelList中的序列号，返回序列号，命名为num
     public int GetThisIcon(GameObject _currentLabelPanel)
     {

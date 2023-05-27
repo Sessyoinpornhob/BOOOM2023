@@ -70,14 +70,13 @@ public class LabelPanel : MonoBehaviour
             // newGetCard是否在cardJudge01(为例)中，如果在就删除表中对应元素
             if (cardJudges[0].IndexOf(newGetCard) != -1)
             {
-                
                 Debug.Log(newGetCard.name + " is Right");
-                
+
+                // -----------------------游戏内容更新--------------------------
                 // 生成新的文本
-                GetTextInTextManager(newGetCard);
-                SoundManager.instance.GetIntoAudio();// 调用音效
-                cardJudges[0].RemoveAt(cardJudges[0].IndexOf(newGetCard));
-                
+                GetTextInTextManager(newGetCard,1);
+                // 调用音效
+                SoundManager.instance.GetIntoAudio();
                 // 生成图片 能用 下面是要改Sprite
                 var spriteString = GetSpriteString(newGetCard);
                 if (spriteString != "null")
@@ -85,14 +84,19 @@ public class LabelPanel : MonoBehaviour
                     InstantiateNewImage(targetImage.gameObject, spriteString);
                 }
                 
+                // -----------------------游戏机制更新--------------------------
+                cardJudges[0].RemoveAt(cardJudges[0].IndexOf(newGetCard));
+
+
                 // 当cardJudge01列表里没东西了以后视为成功
                 if (cardJudges[0].Count == 0)
                 {
-                    // 成功后播放CG并删除cardJudges表中首个list，当cardJudge01(为例)
-                    // Debug.Log("播放CG");
+
+                    // -----------------------游戏内容更新--------------------------
+                    // 在一个CardJudge完成后（位置2）输出文本
+                    GetTextInTextManager(newGetCard,2);
                     
-                    // 这个地方需要加一些判定来分流不同的图片生成的时机。
-                    
+                    // -----------------------游戏机制更新--------------------------
                     if (cardJudges.Count != 1)
                     {
                         cardJudges.RemoveAt(0);
@@ -127,7 +131,7 @@ public class LabelPanel : MonoBehaviour
         return spriteString;// 这里有可能返回null
     }
 
-    // 实例化Image，然后更换Sprite。找时间改到IM里面去。
+    // 实例化Image，然后更换Sprite。找时间改到ImageManager里面去。
     public void InstantiateNewImage(GameObject refImage, string spriteString)
     {
         var instancedImage =  Instantiate(refImage,gameObject.transform);
@@ -139,18 +143,41 @@ public class LabelPanel : MonoBehaviour
 
 
     /*-------------------------文本生成相关-----------------------------*/
-    // 获取字符串和播放字符串
-    public void GetTextInTextManager(GameObject newGetCard)
+    // 获取字符串和播放字符串，双条件判定也加在这里把。
+    public void GetTextInTextManager(GameObject newGetCard, int mode)
     {
         string newGetCardID = newGetCard.GetComponent<Card>().cardID;
-
-        string labelPanelText01 = textManager.TextSearch(newGetCardID, 1);
-        textTarget.GetComponent<Text>().text = labelPanelText01;
+        string doubleCondition = textManager.TextSearch(newGetCardID, 3);
         
-        labelPanelNewText = textManager.TextSearch(newGetCardID, 1);
-        textTarget.GetComponent<Text>().text = "";
-        TextNum = 0;
-        IsWrite = true;
+        // 在卡牌验证后（位置1）输出文本
+        if (mode == 1)
+        {
+            if (doubleCondition == "null")
+            {
+                string labelPanelText01 = textManager.TextSearch(newGetCardID, 1);
+                textTarget.GetComponent<Text>().text = labelPanelText01;
+                
+                labelPanelNewText = textManager.TextSearch(newGetCardID, 1);
+                textTarget.GetComponent<Text>().text = "";
+                TextNum = 0;
+                IsWrite = true;
+            }
+        }
+        // 在一个CardJudge完成后（位置2）输出文本
+        else if (mode == 2)
+        {
+            if (doubleCondition == "Yes")
+            {
+                string labelPanelText01 = textManager.TextSearch(newGetCardID, 1);
+                textTarget.GetComponent<Text>().text = labelPanelText01;
+                
+                labelPanelNewText = textManager.TextSearch(newGetCardID, 1);
+                textTarget.GetComponent<Text>().text = "";
+                TextNum = 0;
+                IsWrite = true;
+            }
+        }
+
     }
     
     

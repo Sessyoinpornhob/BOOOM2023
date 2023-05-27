@@ -2242,6 +2242,7 @@ MonoBehaviour:
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 1047604100}
   targetImage: {fileID: 880868105}
+  IsWrite: 0
 --- !u!95 &290033650
 Animator:
   serializedVersion: 5
@@ -2552,6 +2553,7 @@ MonoBehaviour:
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 1256955274}
   targetImage: {fileID: 1715889875}
+  IsWrite: 0
 --- !u!95 &301716428
 Animator:
   serializedVersion: 5
@@ -2993,6 +2995,7 @@ GameObject:
   - component: {fileID: 417565884}
   - component: {fileID: 417565885}
   - component: {fileID: 417565886}
+  - component: {fileID: 417565887}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3159,7 +3162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26d634a2cc98c134c8d344e813bd1f92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  csvFile: {fileID: 4900000, guid: dd73c32873762b8409fa0fb614173e4f, type: 3}
+  csvFile: {fileID: 4900000, guid: 0a4054212a7890a40bd157f4f317028a, type: 3}
 --- !u!114 &417565885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3211,6 +3214,7 @@ MonoBehaviour:
   - {fileID: 1047604100}
   stage03Backup:
   - {fileID: 217713028}
+  waitingtime: 0
 --- !u!114 &417565886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3224,6 +3228,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textManager: {fileID: 417565883}
+--- !u!114 &417565887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417565877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37f4a8e645ebd7c4f8ebe7cb70b749c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &418040962
 GameObject:
   m_ObjectHideFlags: 0
@@ -3377,6 +3393,7 @@ MonoBehaviour:
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 167967375}
   targetImage: {fileID: 1121935358}
+  IsWrite: 0
 --- !u!95 &453746100
 Animator:
   serializedVersion: 5
@@ -4447,6 +4464,7 @@ MonoBehaviour:
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 1706955502}
   targetImage: {fileID: 22685320}
+  IsWrite: 0
 --- !u!95 &634586031
 Animator:
   serializedVersion: 5
@@ -5045,6 +5063,7 @@ MonoBehaviour:
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 2086415854}
   targetImage: {fileID: 1441677654}
+  IsWrite: 0
 --- !u!95 &686352695
 Animator:
   serializedVersion: 5
@@ -7120,6 +7139,7 @@ MonoBehaviour:
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 295094067}
   targetImage: {fileID: 1669834055}
+  IsWrite: 0
 --- !u!95 &956019036
 Animator:
   serializedVersion: 5
@@ -7640,6 +7660,7 @@ MonoBehaviour:
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 1297409261}
   targetImage: {fileID: 1129730295}
+  IsWrite: 0
 --- !u!95 &1106477991
 Animator:
   serializedVersion: 5
@@ -8895,6 +8916,7 @@ MonoBehaviour:
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 1500056694}
   targetImage: {fileID: 702459398}
+  IsWrite: 0
 --- !u!95 &1325245005
 Animator:
   serializedVersion: 5
@@ -10134,6 +10156,7 @@ MonoBehaviour:
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 747178751}
   targetImage: {fileID: 2141548189}
+  IsWrite: 0
 --- !u!95 &1531568163
 Animator:
   serializedVersion: 5
@@ -10236,6 +10259,7 @@ MonoBehaviour:
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 983091179}
   targetImage: {fileID: 1835126731}
+  IsWrite: 0
 --- !u!95 &1541011315
 Animator:
   serializedVersion: 5
@@ -10336,6 +10360,7 @@ MonoBehaviour:
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 834820963}
   targetImage: {fileID: 224045974}
+  IsWrite: 0
 --- !u!95 &1545093855
 Animator:
   serializedVersion: 5
@@ -11624,6 +11649,7 @@ MonoBehaviour:
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 217713028}
   targetImage: {fileID: 1258225466}
+  IsWrite: 0
 --- !u!95 &1665212579
 Animator:
   serializedVersion: 5
@@ -12727,6 +12753,7 @@ MonoBehaviour:
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 946215989}
   targetImage: {fileID: 1267355418}
+  IsWrite: 0
 --- !u!95 &1774910112
 Animator:
   serializedVersion: 5
@@ -13026,6 +13053,7 @@ MonoBehaviour:
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 1138720146}
   targetImage: {fileID: 706170319}
+  IsWrite: 0
 --- !u!95 &1806528659
 Animator:
   serializedVersion: 5
@@ -13732,6 +13760,7 @@ MonoBehaviour:
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 1767926606}
   targetImage: {fileID: 761438365}
+  IsWrite: 0
 --- !u!95 &1995787630
 Animator:
   serializedVersion: 5
@@ -15613,6 +15642,7 @@ MonoBehaviour:
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 1457344945}
   targetImage: {fileID: 36009165}
+  IsWrite: 0
 --- !u!224 &5432327035156108776
 RectTransform:
   m_ObjectHideFlags: 0

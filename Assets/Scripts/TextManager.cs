@@ -58,6 +58,10 @@ public class TextManager : MonoBehaviour
         // 获取插画名 --------> 做一个null检测，以防出现此处不需要插画改变的情况。
         string searchStringOfSprite = csvController.getString(result.x, result.y + 3);
         
+        // 非固定顺序同时满足标识符  --------->  只有Yes和null
+        string searchStringDouble = csvController.getString(result.x, result.y + 4);
+        
+        
         Debug.Log("searchStringLeft= " + searchStringLeft + " and " + "searchStringRight= " + searchStringRight);
 
         // 取左取右 有点傻 等待重构
@@ -72,6 +76,10 @@ public class TextManager : MonoBehaviour
         else if (needmode == 2)
         {
             return searchStringOfSprite;
+        }
+        else if (needmode == 3)
+        {
+            return searchStringDouble;
         }
         return "-1";
     }
