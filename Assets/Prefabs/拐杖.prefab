@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7074342568262773012}
   m_Layer: 5
   m_Name: "\u6B63\u9762"
-  m_TagString: Untagged
+  m_TagString: CardSprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 7074342568825496771}
   m_Layer: 5
   m_Name: "\u80CC\u9762"
-  m_TagString: Untagged
+  m_TagString: CardSprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -244,8 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardID: GuaiZhang
-  isNote: 0
-  useMath: 0
+  canUse: 0
   targetCardBar: {fileID: 0}
   audioPlayCount: 1
 --- !u!212 &7074342569711859049
@@ -286,8 +285,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1480411845
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}

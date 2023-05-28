@@ -110,7 +110,11 @@ public class LabelPanel : MonoBehaviour
                     else
                     {
                         Debug.Log("本标签全部任务完成->进行下一步");
+                        
                         StartCoroutine(WaitAnimator());
+                        
+                        /*AnimatorManager.instance.SwitchSrColorLight(AnimatorManager.instance.bg);
+                        AnimatorManager.instance.SwitchCardsSrColorLight();*/
                         
                         gameStageManager.StageUpdate(currentLabelIcon);
                         gameStageManager.StageCheck();
@@ -127,19 +131,23 @@ public class LabelPanel : MonoBehaviour
     {
         while (IsWrite)
         {
-            yield return null; // 
+            yield return null; // 直到本帧末尾，返回继续执行while
         }
         
         // 等待的时间就在这写吧，感觉public出去会有问题
         yield return new WaitForSeconds(1f); // 如果能获取到打字机将文本输入完会更好。不用时间或者用某些变量？
         var currentLabelIconCanvasGroup = gameObject.GetComponent<CanvasGroup>();
-        //var alpha = 1f;
-        //while(alpha>=0)
-        //{
-        //    alpha -= 0.01f;
-        //    currentLabelIconCanvasGroup.alpha = alpha;
-        //    yield return null;
-        //}
+        var alpha = 1f;
+        while(alpha>=0)
+        {
+            alpha -= 0.01f;
+            currentLabelIconCanvasGroup.alpha = alpha;
+            yield return null;
+        }
+        
+        AnimatorManager.instance.SwitchSrColorLight(AnimatorManager.instance.bg);
+        AnimatorManager.instance.SwitchCardsSrColorLight();
+        
         currentLabelIcon.SetActive(false);
         currentLabelIconCanvasGroup.alpha = 1f;
         gameObject.SetActive(false);

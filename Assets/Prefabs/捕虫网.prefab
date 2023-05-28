@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8081357526813228120}
   m_Layer: 5
   m_Name: "\u6B63\u9762"
-  m_TagString: Untagged
+  m_TagString: CardSprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 8081357527099798007}
   m_Layer: 5
   m_Name: "\u80CC\u9762"
-  m_TagString: Untagged
+  m_TagString: CardSprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -195,7 +195,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8081357527866876474}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
@@ -244,8 +244,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardID: BuChongWang
-  isNote: 0
-  useMath: 0
+  canUse: 0
+  targetCardBar: {fileID: 0}
+  audioPlayCount: 1
 --- !u!212 &8081357527866876471
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -284,8 +285,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1480411845
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
