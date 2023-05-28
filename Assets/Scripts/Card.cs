@@ -16,11 +16,14 @@ public class Card : MonoBehaviour
 
     [Header("音频视效相关")] 
     public int audioPlayCount;
+    public bool canHover = true;
+    private float _grayScale;
 
     private void Start()
     {
         audioPlayCount = 1;
         canUse = false;
+        canHover = true;
     }
 
     public void OnMouseDrag()//拖拽卡片
@@ -41,6 +44,79 @@ public class Card : MonoBehaviour
             }
         }
     }
+
+    // Hover 亮，但是在全场亮度暗的情况下
+    public void OnMouseEnter()
+    {
+        if (gameObject.GetComponent<FlipCard>().canFlipCpunt == 0)
+        {
+            //Debug.Log("IN!");
+            // get all child gameobjects' spriteRenderer color alpha and check if equals 1
+
+            foreach (Transform card in transform)
+            {
+                if (card.GetComponent<SpriteRenderer>().color.r < 1f)
+                {
+                    StartCoroutine(ChangeCardsGrayScaleUpHover());
+                }
+
+            }
+            
+        }
+    }
+    
+    // hover 变亮
+    IEnumerator ChangeCardsGrayScaleUpHover()
+    {
+        _grayScale = AnimatorManager.instance.grayScale;
+        Color defaultColor = new Color(_grayScale, _grayScale, _grayScale, 1.0f);
+
+        while (_grayScale < 1f)
+        {
+            _grayScale += 0.05f;
+            defaultColor = new Color(_grayScale, _grayScale, _grayScale, 1);
+            
+            // foreach只会在一帧内执行完毕。
+            foreach (Transform card in transform)
+            {
+                card.GetComponent<SpriteRenderer>().color = defaultColor;
+            }
+
+            yield return null;
+        }
+    }
+
+    public void OnMouseExit()
+    {
+        if (AnimatorManager.instance.isSceneLight == false && gameObject.GetComponent<FlipCard>().canFlipCpunt == 0)
+        {
+            // 判断 canFlipCpunt
+            StartCoroutine(ChangeCardsGrayScaleDownHover());
+        }
+        
+    }
+    IEnumerator ChangeCardsGrayScaleDownHover()
+    {
+        _grayScale = AnimatorManager.instance.grayScale;
+        Color defaultColor = new Color(1, 1, 1, 1.0f);
+
+        var temp = 1f;
+
+        while (_grayScale < temp)
+        {
+            temp -= 0.1f;
+            defaultColor = new Color(temp, temp, temp, 1);
+            
+            // foreach只会在一帧内执行完毕。
+            foreach (Transform card in transform)
+            {
+                card.GetComponent<SpriteRenderer>().color = defaultColor;
+            }
+
+            yield return null;
+        }
+    }
+    
     
     public void OnMouseUp()//放开卡片
     {

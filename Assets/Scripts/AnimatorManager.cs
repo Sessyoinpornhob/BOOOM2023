@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 // 基本上是用协程实现的动画效果...
 public class AnimatorManager : MonoBehaviour
@@ -11,6 +12,7 @@ public class AnimatorManager : MonoBehaviour
 
     [Header("其实是反向的")]
     public float switchSpeed;
+    public float fadeSpeed;
 
     private Color _color;
     private SpriteRenderer _target;
@@ -18,16 +20,26 @@ public class AnimatorManager : MonoBehaviour
 
     [Header("背景")]
     public SpriteRenderer bg;
+    public bool isSceneLight;
     
     [Header("卡牌列表")]
     public GameObject[] cardVistuals;
-    
+
+    [Header("结束界面")]
+    public SpriteRenderer endImg;
+    public Text endText;
 
 
     public void Awake()
     {
         instance = this;
     }
+
+    public void Start()
+    {
+        isSceneLight = true;
+    }
+    
 
     // 让背景变暗
     public void SwitchSrColorDark(SpriteRenderer target)
@@ -36,6 +48,7 @@ public class AnimatorManager : MonoBehaviour
         _target = target;
         
         StartCoroutine(ChangeGrayScaleDown());
+        isSceneLight = false;
     }
 
     // 酱紫写协程太诡异了，得去看看商业框架...我感觉自己现阶段也看不了那些。
@@ -66,6 +79,7 @@ public class AnimatorManager : MonoBehaviour
         _target = target;
         
         StartCoroutine(ChangeGrayScaleUp());
+        isSceneLight = true;
     }
 
     IEnumerator ChangeGrayScaleUp()
@@ -141,4 +155,27 @@ public class AnimatorManager : MonoBehaviour
             yield return null;
         }
     }
+    
+    // EndImage透明度变化
+    public void SwitchOnEndImg()
+    {
+        StartCoroutine(EndingAlpha());
+    }
+
+    IEnumerator EndingAlpha()
+    {
+        var alpha = 0f;
+        var defaultColor = new Color(1,1,1,alpha);
+        
+        while(alpha < 1f)
+        {
+            alpha += 0.002f;
+            defaultColor = new Color(1,1,1,alpha);
+            endImg.color = defaultColor;
+            endText.color = defaultColor;
+            yield return null;
+        }
+    }
+    
+
 }

@@ -36,7 +36,7 @@ public class LabelPanel : MonoBehaviour
 
     [Header("图片生成设置")] 
     public Image targetImage;
-    
+
 
     public void Start()
     {
@@ -140,7 +140,7 @@ public class LabelPanel : MonoBehaviour
         var alpha = 1f;
         while(alpha>=0)
         {
-            alpha -= 0.01f;
+            alpha -= 0.01f * AnimatorManager.instance.fadeSpeed;
             currentLabelIconCanvasGroup.alpha = alpha;
             yield return null;
         }
@@ -232,7 +232,8 @@ public class LabelPanel : MonoBehaviour
     [Header("打字机效果")]
     public bool IsWrite;//现在是否在录入文字
     float NextTextNewTime;
-    int TextNum;//正在使用文本上的第几个字
+    int TextNum = -1;//正在使用文本上的第几个字
+    public int lineBreakNum;
 
     public void Update()
     {
@@ -248,9 +249,11 @@ public class LabelPanel : MonoBehaviour
         {
             NextTextNewTime = 0;//时间重置
             TextNum++;
-            if (TextNum== labelPanelNewText.IndexOf("\\"))
+            if (TextNum == labelPanelNewText.IndexOf("\\",lineBreakNum))
             {
                 TextNum += 2;
+                lineBreakNum = TextNum;
+                textTarget.GetComponent<Text>().text += "\n";
                 textTarget.GetComponent<Text>().text += "\n";
             }
 
@@ -258,6 +261,7 @@ public class LabelPanel : MonoBehaviour
             if (TextNum >= labelPanelNewText.Length-1)
             {
                 IsWrite = false;
+                lineBreakNum = 0;
                 TextNum = 0;
             }
         }

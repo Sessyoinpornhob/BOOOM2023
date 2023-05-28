@@ -51,3 +51,6 @@ TagManager:
   - name: Text
     uniqueID: 1142954179
     locked: 0
+  - name: EndImg
+    uniqueID: 1043104647
+    locked: 0

@@ -65,6 +65,12 @@ public class GameStageManager : MonoBehaviour
         {
             Debug.Log("本阶段标签都已完成");
             StageSwitchSFXVFX();
+
+            // 当三阶段完成的时候：
+            if (stageNumCurrent == 3)
+            {
+                StartCoroutine(WaitForAWhile());
+            }
         }
     }
 
@@ -82,8 +88,8 @@ public class GameStageManager : MonoBehaviour
     IEnumerator StageWaitForSound()
     {
         yield return new WaitForSeconds(waitingtime);
-        Debug.Log("waitingtime = "+ waitingtime);
-        Debug.Log("musicFinished");
+        /*Debug.Log("waitingtime = "+ waitingtime);
+        Debug.Log("musicFinished");*/
         // 在这个函数中写需要延迟调用的内容。
         StageSwitch();
     }
@@ -114,5 +120,11 @@ public class GameStageManager : MonoBehaviour
             CardSender.instance.FlipCards("2");
         }
     }
-    
+
+    IEnumerator WaitForAWhile()
+    {
+        yield return new WaitForSeconds(8);
+        
+        AnimatorManager.instance.SwitchOnEndImg();
+    }
 }
