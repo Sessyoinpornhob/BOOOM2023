@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Managers;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -73,7 +74,7 @@ public class Card : MonoBehaviour
 
         while (_grayScale < 1f)
         {
-            _grayScale += 0.05f;
+            _grayScale += 0.1f;
             defaultColor = new Color(_grayScale, _grayScale, _grayScale, 1);
             
             // foreach只会在一帧内执行完毕。

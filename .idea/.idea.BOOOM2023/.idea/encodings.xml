@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/Assets/Scripts/CardAudio.cs" charset="GBK" />
     <file url="file://$PROJECT_DIR$/Assets/Scripts/FinEvent.cs" charset="GBK" />
     <file url="file://$PROJECT_DIR$/Assets/Scripts/GetAudioSetting.cs" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/Managers/SoundManager.cs" charset="GBK" />
     <file url="file://$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" charset="GBK" />
   </component>
 </project>
