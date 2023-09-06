@@ -2855,7 +2855,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 306596774}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2669eab454386ce4abdfb2049864c26a, type: 3}
@@ -3507,7 +3507,7 @@ MonoBehaviour:
   switchSpeed: 1
   fadeSpeed: 0.5
   bg: {fileID: 2112907045}
-  isSceneLight: 0
+  isSceneLight: 1
   cardVistuals: []
   endImg: {fileID: 2105587085}
   endText: {fileID: 1389829490}
@@ -11784,8 +11784,7 @@ MonoBehaviour:
   cardJudge02: []
   cardJudge03: []
   cardJudge04: []
-  cardJudge05:
-  - {fileID: 1621638183}
+  cardJudge05: []
   gameStageManager: {fileID: 417565885}
   currentLabelIcon: {fileID: 747178751}
   targetImage: {fileID: 2141548189}
@@ -13334,7 +13333,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700992971}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 925ed074f6341f748946791470dc6754, type: 3}

@@ -89,6 +89,7 @@ public class Card : MonoBehaviour
 
     public void OnMouseExit()
     {
+        Debug.Log("我出去啦");
         if (AnimatorManager.instance.isSceneLight == false && gameObject.GetComponent<FlipCard>().canFlipCpunt == 0)
         {
             // 判断 canFlipCpunt
